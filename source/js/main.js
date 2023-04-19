@@ -1,6 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import './modules/header/locomotive-scroll';
+import {Burger} from './modules/header/burger';
+import {StickyHeader} from './modules/header/sticky-header';
+import {initLocomotiveScroll} from './modules/header/init-locomotive-scroll';
 
 // ---------------------------------
 
@@ -8,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-
+  initLocomotiveScroll();
   iosVhFix();
 
   // Modules
@@ -21,6 +25,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    const burger = new Burger();
+    burger.init();
+    const stickyHeader = new StickyHeader();
+    stickyHeader.init();
   });
 });
 
