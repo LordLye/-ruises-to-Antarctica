@@ -641,6 +641,7 @@ button,
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 103px;
+  min-width: 320px;
 }
 
 .btn {
@@ -1471,6 +1472,68 @@ button,
   height: 100vh;
 }
 
+.main-footer {
+  background-color: #011C40;
+  padding: 50px 0 50px 0;
+}
+
+.main-footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-footer__logo {
+  margin-right: 2.587%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-footer__list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 20px 33px;
+  margin: 13px auto 0 0;
+  padding: 0;
+  max-width: 75%;
+}
+
+.main-footer__item {
+  line-height: 20px;
+}
+
+.social__list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 27px;
+  max-width: 106px;
+  padding: 0;
+  margin: 11px 0 0 0;
+}
+
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1537,6 +1600,41 @@ button,
   .header-example__link {
     font-size: 14px;
     line-height: 17px;
+  }
+
+  .main-footer__logo {
+    margin-right: 2.214%;
+  }
+
+  .main-footer__logo svg {
+    width: 38px;
+    height: 20px;
+  }
+
+  .main-footer__logo svg {
+    width: 42px;
+    height: 22px;
+  }
+
+  .main-footer__list {
+    gap: 23px;
+    margin-top: 5px;
+  }
+
+  .main-footer__item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .social__list {
+    gap: 22px;
+    margin-top: 2px;
+  }
+
+  .social__link svg {
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -1651,6 +1749,35 @@ button,
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+  }
+
+  .main-footer {
+    padding: 40px 0 40px 0;
+  }
+
+  .main-footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 30px;
+    -webkit-box-align: self-start;
+    -ms-flex-align: self-start;
+    align-items: self-start;
+  }
+
+  .main-footer__list {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .social__list {
+    margin-top: 0;
   }
 }
 
