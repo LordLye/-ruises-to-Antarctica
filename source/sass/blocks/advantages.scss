@@ -1,0 +1,129 @@
+.advantages {
+  background: url('../img/advantages-background.jpg') no-repeat;
+  background-size: cover;
+  min-height: 562px;
+  padding: 120px 103px 120px 103px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+
+  @include vp-1023 {
+    padding: 100px 45px 100px 45px;
+  }
+
+  @include vp-767 {
+    padding: 65px 15px 65px 15px;
+  }
+
+  & h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    margin: 0;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+
+  @include vp-767 {
+    grid-template-columns: auto;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: $color-alice-blue;
+  padding: 30px 20px 50px 30px;
+  max-width: 360px;
+  min-width: 206px;
+
+  & svg {
+    margin-bottom: 5px;
+
+    @include vp-1023 {
+      margin-bottom: 4px;
+    }
+  }
+
+  & h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+
+    @include vp-1023 {
+      font-size: 18px;
+      line-height: 25px
+    }
+  }
+
+  & p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &:nth-child(2n) {
+    padding-right: 50px;
+
+    @include vp-1023 {
+      padding-right: 10px;
+    }
+
+    & p {
+      max-width: 280px;
+    }
+  }
+
+  @include vp-1023 {
+    padding: 26px 10px 25px 20px;
+
+    &:nth-child(1n) {
+      & svg {
+        width: 21px;
+        height: 26px;
+      }
+    }
+
+    &:nth-child(2n) {
+      padding: 26px 17px 25px 20px;
+
+      & svg {
+        width: 27px;
+        height: 26px;
+      }
+    }
+
+    &:nth-child(3n) {
+      padding: 26px 17px 25px 20px;
+
+      & svg {
+        width: 36px;
+        height: 26px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    padding: 25px 14px 25px 20px;
+
+    &:nth-child(2n) {
+      padding: 26px 22px 25px 20px;
+    }
+  }
+}
