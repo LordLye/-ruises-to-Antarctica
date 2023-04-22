@@ -1,0 +1,31 @@
+.cruises {
+padding: 95px 15px 120px 15px;
+}
+
+.cruises__title {
+  font-weight: 600;
+font-size: 28px;
+line-height: 42px;
+margin: 0 auto 60px auto;
+max-width: 800px;
+text-align: center;
+}
+
+.cruises__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  justify-content: center;
+}
+
+.cruises__item {
+  position: relative;
+  &:hover .cruises-card__popup,
+  &:focus-within .cruises-card__popup {
+    display: flex;
+  }
+}

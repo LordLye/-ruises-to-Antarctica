@@ -653,10 +653,15 @@ button,
 }
 
 .btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 14px 46px 15px 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #011C40;
   background-color: #F9FBFD;
   border: none;
@@ -675,7 +680,17 @@ button,
   pointer-events: none;
 }
 
-.btn.focus-visible:focus {
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  opacity: 0.5;
+  -webkit-box-shadow: inset 300px 300px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 300px 300px rgba(0, 0, 0, 0.3);
+}
+
+.btn:focus {
   opacity: 0.8;
 }
 
@@ -1548,6 +1563,7 @@ button,
   margin-top: -108px;
   background: url("../img/intro-background.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -1691,6 +1707,153 @@ button,
   max-width: 280px;
 }
 
+.cruises {
+  padding: 95px 15px 120px 15px;
+}
+
+.cruises__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin: 0 auto 60px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.cruises__list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.cruises__item {
+  position: relative;
+}
+
+.cruises__item:hover .cruises-card__popup,
+.cruises__item:focus-within .cruises-card__popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cruises-card {
+  padding: 23px 30px 23px 30px;
+  width: 260px;
+  min-height: 386px;
+}
+
+.cruises-card h3 {
+  margin: 313px 0 0 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #F9FBFD;
+}
+
+.cruises-card--astoria {
+  background: url("../img/cruise-astoria.jpg") no-repeat;
+  background-size: cover;
+}
+
+.cruises-card--elayn {
+  background: url("../img/cruise-astoria.jpg") no-repeat;
+  background-size: cover;
+}
+
+.cruises-card--atlantis {
+  background: url("../img/cruise-atlantis.jpg") no-repeat;
+  background-size: cover;
+}
+
+.cruises-card--odissey {
+  background: url("../img/cruise-odissey.jpg") no-repeat;
+  background-size: cover;
+}
+
+.cruises-card--olimpia {
+  background: url("../img/cruise-olimpia.jpg") no-repeat;
+  background-size: cover;
+}
+
+.cruises-card--avrora {
+  background: url("../img/cruise-avrora.jpg") no-repeat;
+  background-size: cover;
+}
+
+.cruises-card--leonor {
+  background: url("../img/cruise-leonor.jpg") no-repeat;
+  background-size: cover;
+}
+
+.cruises-card--minion {
+  background: url("../img/cruise-minion.jpg") no-repeat;
+  background-size: cover;
+}
+
+.cruises-card__popup {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  min-height: 386px;
+  padding: 28px 25px;
+  background: #011C40;
+}
+
+.cruises-card__popup h3 {
+  margin: 0 0 18px 0;
+  color: #F9FBFD;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.cruises-card__popup h4 {
+  margin: 0 0 1px 0;
+  color: #F9FBFD;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruises-card__popup p {
+  margin: 0 0 12px 0;
+  color: #D8D8D9;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruises-card__popup p:last-of-type {
+  margin-bottom: 24px;
+}
+
+.cruises-card__popup button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  background: #F9FBFD;
+  padding: 8px 15px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1734,7 +1897,7 @@ button,
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 45px;
+    padding: 0 41px;
   }
 
   .header-example__logo {
@@ -1875,6 +2038,15 @@ button,
   .advantages__item:nth-child(3n) svg {
     width: 36px;
     height: 26px;
+  }
+
+  .cruises-card {
+    width: 309px;
+    padding: 28px 35px 28px 35px;
+  }
+
+  .cruises-card h3 {
+    margin-top: 303px;
   }
 }
 
@@ -2143,10 +2315,6 @@ button,
 }
 
 @media (hover: hover) {
-  .btn:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-
   .custom-select__item[aria-selected=true]:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.2);
   }
