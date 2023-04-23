@@ -13,11 +13,8 @@
     padding: 0 15px;
   }
 
-  &__intro {
+  &__max {
     padding: 0;
-  }
-
-  &__advantages {
-    padding: 0;
+    min-width: 320px;
   }
 }
