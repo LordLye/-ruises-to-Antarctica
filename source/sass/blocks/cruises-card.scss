@@ -1,0 +1,117 @@
+.cruises-card {
+  padding: 23px 30px 0 30px;
+  /* width: 260px; */
+  min-height: 386px;
+
+  @include vp-1023 {
+   /*  width: 309px; */
+    padding: 28px 35px 0 35px;
+  }
+
+  & h3 {
+    position: absolute;
+    margin: 0;
+    bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-alice-blue;
+  }
+
+  &--astoria {
+    background: url('../img/cruise-astoria.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  &--elayn {
+    background: url('../img/cruise-astoria.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  &--atlantis {
+    background: url('../img/cruise-atlantis.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  &--odissey {
+    background: url('../img/cruise-odissey.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  &--olimpia {
+    background: url('../img/cruise-olimpia.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  &--avrora {
+    background: url('../img/cruise-avrora.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  &--leonor {
+    background: url('../img/cruise-leonor.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  &--minion {
+    background: url('../img/cruise-minion.jpg') no-repeat;
+    background-size: cover;
+  }
+}
+
+.cruises-card__popup {
+  visibility: hidden;
+  flex-direction: column;
+  margin-top: -23px;
+  margin-left: -30px;
+  width: 260px;
+  min-height: 386px;
+  padding: 25px 25px;
+  background: $color-tangaroa;
+  height: calc(100% + 23px);
+
+  @include vp-1023 {
+    width: 309px;
+    height: calc(100% + 28px);
+    margin-left: -35px;
+    margin-top: -28px;
+  }
+
+  @include vp-767 {
+    width: 270px;
+  }
+
+  & h3 {
+    position: static;
+    margin: 0 0 18px 0;
+    color: $color-alice-blue;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  & h4 {
+    margin: 0 0 1px 0;
+    color: $color-alice-blue;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  & p {
+    margin: 0 0 12px 0;
+    color: $color-quartz;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  & button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    background: $color-alice-blue;
+    padding: 8px 15px;
+    margin: auto 0 0 0;
+  }
+}

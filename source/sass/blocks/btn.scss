@@ -1,6 +1,7 @@
 .btn {
-  display: inline-flex;
-  padding: 14px 46px 15px 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   color: $color-main-text;
 
@@ -16,11 +17,19 @@
 
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 
-  @include hover-focus {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+    box-shadow: inset 300px 300px rgba(0, 0, 0, 0.3);
+  }
+
+  &:focus {
     opacity: 0.8;
   }
 }
