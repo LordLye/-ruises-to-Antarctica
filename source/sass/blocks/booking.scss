@@ -1,0 +1,74 @@
+.booking {
+  background: url("../img/feedback-background-desktop.jpg") no-repeat;
+  background-size: cover;
+  min-height: 555px;
+  padding: 50px 11.933% 50px 11.933%;
+  display: flex;
+  gap: 20px;
+
+  @include vp-1023 {
+    background: url("../img/feedback-background-tablet.jpg") no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px 100px 50px;
+    gap: 60px;
+  }
+
+  @include vp-767 {
+    background: url("../img/feedback-background-mobile.jpg") no-repeat;
+    background-size: cover;
+    padding: 65px 15px;
+    gap: 40px;
+  }
+}
+
+.booking__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 178px;
+
+  @include vp-1023 {
+    align-items: center;
+    padding-top: 0;
+  }
+
+  & h2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+
+    @include vp-1023 {
+      font-size: 34px;
+      line-height: 51px;
+    }
+
+    @include vp-767 {
+      font-size: 24px;
+line-height: 31px;
+    }
+  }
+
+  & p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 27px;
+    max-width: 352px;
+    text-align: center;
+
+    @include vp-1023 {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+line-height: 22px;
+    }
+
+
+  }
+}
