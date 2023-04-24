@@ -2,7 +2,7 @@
 padding: 95px 15px 120px 15px;
 
 @include vp-1023 {
-  padding: 100px 15px 100px 15px;
+  padding: 100px 19px 100px 19px;
 }
 
 @include vp-767 {
@@ -36,16 +36,16 @@ line-height: 36px;
   padding: 0;
   gap: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 260px);
+  grid-template-columns: repeat(4, minmax(170px, 1fr));
   grid-auto-rows: 1fr;
   justify-content: center;
 
   @include vp-1023 {
-    grid-template-columns: repeat(auto-fit, 309px);
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
   }
 
   @include vp-767 {
-    grid-template-columns: repeat(auto-fit, 270px);
+    grid-template-columns: repeat(1, minmax(250px, 380px));
   }
 }
 

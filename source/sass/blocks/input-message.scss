@@ -1,0 +1,13 @@
+.input-message {
+  position: absolute;
+  left: 0;
+  top: 45px;
+  font-size: 10px;
+  line-height: 18px;
+  color: $color-torch-red;
+
+  .booking-form__checkbox & {
+    top: 24px;
+  }
+}
+

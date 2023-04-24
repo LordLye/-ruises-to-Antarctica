@@ -1725,7 +1725,8 @@ button,
   gap: 30px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 260px);
+  -ms-grid-columns: (minmax(170px, 1fr))[4];
+  grid-template-columns: repeat(4, minmax(170px, 1fr));
   grid-auto-rows: 1fr;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1753,14 +1754,15 @@ button,
 }
 
 .cruises-card {
+  position: relative;
   padding: 23px 30px 0 30px;
-  /* width: 260px; */
   min-height: 386px;
 }
 
 .cruises-card h3 {
   position: absolute;
   margin: 0;
+  padding-right: 10px;
   bottom: 20px;
   font-weight: 500;
   font-size: 18px;
@@ -1816,7 +1818,7 @@ button,
   flex-direction: column;
   margin-top: -23px;
   margin-left: -30px;
-  width: 260px;
+  width: calc(100% + 60px);
   min-height: 386px;
   padding: 25px 25px;
   background: #011C40;
@@ -1865,6 +1867,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -1878,6 +1883,7 @@ button,
   flex-direction: column;
   gap: 10px;
   padding-top: 178px;
+  width: 55%;
 }
 
 .booking__text h2 {
@@ -1885,20 +1891,21 @@ button,
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
-  text-align: center;
 }
 
 .booking__text p {
   margin: 0;
   font-size: 18px;
   line-height: 27px;
-  max-width: 352px;
-  text-align: center;
+  min-width: 352px;
+  max-width: 61.54%;
+}
+
+.booking__form {
+  width: 38.75%;
 }
 
 .booking-form {
-  max-width: 403px;
-  margin-left: auto;
   background: #011C40;
   padding: 50px;
   display: -webkit-box;
@@ -1918,7 +1925,10 @@ button,
   line-height: 27px;
   color: #F9FBFD;
   margin-bottom: 8px;
-  text-align: center;
+}
+
+.booking-form [data-on-input-validate] {
+  position: relative;
 }
 
 .booking-form__input-wrapper {
@@ -1943,7 +1953,7 @@ button,
   margin-bottom: 10px;
 }
 
-.booking-form__checkbox span {
+.booking-form__checkbox label span {
   font-size: 10px;
   line-height: 13px;
   color: #F9FBFD;
@@ -2014,6 +2024,19 @@ button,
   color: #011C40;
   padding: 14px;
   border: none;
+}
+
+.input-message {
+  position: absolute;
+  left: 0;
+  top: 45px;
+  font-size: 10px;
+  line-height: 18px;
+  color: #ff1553;
+}
+
+.booking-form__checkbox .input-message {
+  top: 24px;
 }
 
 /* @mixin hover-focus {
@@ -2203,7 +2226,7 @@ button,
   }
 
   .cruises {
-    padding: 100px 15px 100px 15px;
+    padding: 100px 19px 100px 19px;
   }
 
   .cruises__title {
@@ -2212,16 +2235,16 @@ button,
   }
 
   .cruises__list {
-    grid-template-columns: repeat(auto-fit, 309px);
+    -ms-grid-columns: (minmax(300px, 1fr))[2];
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
   }
 
   .cruises-card {
-    /*  width: 309px; */
     padding: 28px 35px 0 35px;
   }
 
   .cruises-card__popup {
-    width: 309px;
+    width: calc(100% + 70px);
     height: calc(100% + 28px);
     margin-left: -35px;
     margin-top: -28px;
@@ -2242,24 +2265,35 @@ button,
   }
 
   .booking__text {
+    width: 100%;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    text-align: center;
     padding-top: 0;
   }
 
   .booking__text h2 {
     font-size: 34px;
     line-height: 51px;
+    text-align: center;
   }
 
   .booking__text p {
+    min-width: auto;
+    max-width: 51.9%;
     font-size: 18px;
     line-height: 27px;
   }
 
+  .booking__form {
+    width: 100%;
+  }
+
   .booking-form {
-    margin-left: 0;
+    margin: 0 auto;
+    width: 60.33%;
+    max-width: none;
   }
 }
 
@@ -2473,11 +2507,12 @@ button,
   }
 
   .cruises__list {
-    grid-template-columns: repeat(auto-fit, 270px);
+    -ms-grid-columns: (minmax(250px, 380px))[1];
+    grid-template-columns: repeat(1, minmax(250px, 380px));
   }
 
   .cruises-card__popup {
-    width: 270px;
+    width: calc(100% + 70px);
   }
 
   .booking {
@@ -2485,6 +2520,10 @@ button,
     background-size: cover;
     padding: 65px 15px;
     gap: 40px;
+  }
+
+  .booking__text {
+    width: 89%;
   }
 
   .booking__text h2 {
@@ -2495,10 +2534,16 @@ button,
   .booking__text p {
     font-size: 16px;
     line-height: 22px;
+    max-width: 100%;
   }
 
   .booking-form {
     padding: 40px 30px 40px 30px;
+    width: 100%;
+  }
+
+  .booking-form p {
+    text-align: center;
   }
 }
 
