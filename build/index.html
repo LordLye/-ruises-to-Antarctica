@@ -232,11 +232,12 @@
       <div class="container__max">
         <div class="booking">
           <div class="booking__text">
-          <h2>Раннее бронирование</h2>
-          <p>Забронируйте тур за 3-6 месяцев
-            до даты выезда и сэкономьте до 50%</p>
+            <h2>Раннее бронирование</h2>
+            <p>Забронируйте тур за 3-6 месяцев
+              до даты выезда и сэкономьте до 50%</p>
           </div>
-            <form class="booking__form booking-form">
+          <div class="booking__form" data-form-validate data-callback="base">
+            <form class="booking-form">
               <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
               <label class="booking-form__input-wrapper">
                 <input type="text" placeholder="Имя" name="name" aria-label="Имя">
@@ -247,7 +248,6 @@
               <label class="booking-form__input-wrapper">
                 <input type="email" placeholder="Email" name="email" aria-label="Email">
               </label>
-
               <div class="booking-form__checkbox">
                 <div>
                   <label>
@@ -259,6 +259,7 @@
 
               <button class="booking-form__button button" type="submit">Оставить заявку</button>
             </form>
+          </div>
         </div>
       </div>
     </main>
