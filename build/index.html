@@ -237,19 +237,29 @@
               до даты выезда и сэкономьте до 50%</p>
           </div>
           <div class="booking__form" data-form-validate data-callback="base">
-            <form class="booking-form">
+            <form class="booking-form" method="post" action="https://echo.htmlacademy.ru/" autocomplete="off">
               <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
-              <label class="booking-form__input-wrapper">
-                <input type="text" placeholder="Имя" name="name" aria-label="Имя">
-              </label>
-              <label class="booking-form__input-wrapper">
-                <input type="tel" placeholder="Телефон" name="phone" aria-label="Номер телефона">
-              </label>
-              <label class="booking-form__input-wrapper">
-                <input type="email" placeholder="Email" name="email" aria-label="Email">
-              </label>
+              <div data-on-input-validate data-validate-type="text" data-limitation="name"
+                data-message-base="Поле обязательно к заполнению" data-required>
+                <label class="booking-form__input-wrapper">
+                  <input type="text" placeholder="Имя" name="name" aria-label="Имя">
+                </label>
+              </div>
+              <div data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
+                data-required>
+                <label class="booking-form__input-wrapper">
+                  <input type="tel" placeholder="Телефон" name="phone" aria-label="Номер телефона">
+                </label>
+              </div>
+              <div data-on-input-validate data-validate-type="email" data-message-base="Поле обязательно к заполнению"
+                data-required>
+                <label class="booking-form__input-wrapper">
+                  <input type="email" placeholder="Email" name="email" aria-label="Email">
+                </label>
+              </div>
               <div class="booking-form__checkbox">
-                <div>
+                <div data-on-input-validate data-validate-type="checkbox"
+                  data-message-base="Поле обязательно к заполнению" data-required>
                   <label>
                     <input class="visually-hidden" type="checkbox" name="agreement" checked required>
                     <span>Я согласен на обработку моих персональных данных</span>

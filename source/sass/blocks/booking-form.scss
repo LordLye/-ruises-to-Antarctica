@@ -28,6 +28,10 @@
       text-align: center;
      }
   }
+
+  & [data-on-input-validate] {
+    position: relative;
+  }
 }
 
 .booking-form__input-wrapper {
@@ -47,7 +51,7 @@
   align-items: center;
   margin-bottom: 10px;
 
-  & span {
+  & label span {
     font-size: 10px;
     line-height: 13px;
     color: $color-alice-blue;

@@ -1927,6 +1927,10 @@ button,
   margin-bottom: 8px;
 }
 
+.booking-form [data-on-input-validate] {
+  position: relative;
+}
+
 .booking-form__input-wrapper {
   height: 43px;
   width: 100%;
@@ -1949,7 +1953,7 @@ button,
   margin-bottom: 10px;
 }
 
-.booking-form__checkbox span {
+.booking-form__checkbox label span {
   font-size: 10px;
   line-height: 13px;
   color: #F9FBFD;
@@ -2020,6 +2024,19 @@ button,
   color: #011C40;
   padding: 14px;
   border: none;
+}
+
+.input-message {
+  position: absolute;
+  left: 0;
+  top: 45px;
+  font-size: 10px;
+  line-height: 18px;
+  color: #ff1553;
+}
+
+.booking-form__checkbox .input-message {
+  top: 24px;
 }
 
 /* @mixin hover-focus {
@@ -2248,6 +2265,7 @@ button,
   }
 
   .booking__text {
+    width: 100%;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2262,6 +2280,8 @@ button,
   }
 
   .booking__text p {
+    min-width: auto;
+    max-width: 51.9%;
     font-size: 18px;
     line-height: 27px;
   }
@@ -2502,6 +2522,10 @@ button,
     gap: 40px;
   }
 
+  .booking__text {
+    width: 89%;
+  }
+
   .booking__text h2 {
     font-size: 24px;
     line-height: 31px;
@@ -2510,6 +2534,7 @@ button,
   .booking__text p {
     font-size: 16px;
     line-height: 22px;
+    max-width: 100%;
   }
 
   .booking-form {
