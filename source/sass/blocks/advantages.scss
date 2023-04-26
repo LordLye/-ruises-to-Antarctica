@@ -8,6 +8,11 @@
   flex-direction: column;
   gap: 60px;
 
+  @media (min-resolution: $retina-dppx) {
+    background: url("../img/advantages-background@2x.jpg") no-repeat;
+  background-size: cover;
+  }
+
   @include vp-1023 {
     padding: 100px 45px 100px 45px;
   }

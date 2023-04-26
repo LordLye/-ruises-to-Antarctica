@@ -649,7 +649,7 @@ button,
   min-width: 320px;
 }
 
-.btn {
+.button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,26 +668,26 @@ button,
   transition: opacity 0.3s ease;
 }
 
-.btn--red {
+.button--red {
   background-color: #ff1553;
 }
 
-.btn:disabled {
+.button:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.btn:hover {
+.button:hover {
   opacity: 0.8;
 }
 
-.btn:active {
+.button:active {
   opacity: 0.5;
   -webkit-box-shadow: inset 300px 300px rgba(0, 0, 0, 0.3);
   box-shadow: inset 300px 300px rgba(0, 0, 0, 0.3);
 }
 
-.btn:focus {
+.button:focus {
   opacity: 0.8;
 }
 
@@ -1771,42 +1771,42 @@ button,
 }
 
 .cruises-card--astoria {
-  background: url("../img/cruise-astoria.jpg") no-repeat;
+  background: url("../img/cruise-astoria-desktop.jpg") no-repeat;
   background-size: cover;
 }
 
 .cruises-card--elayn {
-  background: url("../img/cruise-astoria.jpg") no-repeat;
+  background: url("../img/cruise-astoria-desktop.jpg") no-repeat;
   background-size: cover;
 }
 
 .cruises-card--atlantis {
-  background: url("../img/cruise-atlantis.jpg") no-repeat;
+  background: url("../img/cruise-atlantis-desktop.jpg") no-repeat;
   background-size: cover;
 }
 
 .cruises-card--odissey {
-  background: url("../img/cruise-odissey.jpg") no-repeat;
+  background: url("../img/cruise-odissey-desktop.jpg") no-repeat;
   background-size: cover;
 }
 
 .cruises-card--olimpia {
-  background: url("../img/cruise-olimpia.jpg") no-repeat;
+  background: url("../img/cruise-olimpia-desktop.jpg") no-repeat;
   background-size: cover;
 }
 
 .cruises-card--avrora {
-  background: url("../img/cruise-avrora.jpg") no-repeat;
+  background: url("../img/cruise-avrora-desktop.jpg") no-repeat;
   background-size: cover;
 }
 
 .cruises-card--leonor {
-  background: url("../img/cruise-leonor.jpg") no-repeat;
+  background: url("../img/cruise-leonor-desktop.jpg") no-repeat;
   background-size: cover;
 }
 
 .cruises-card--minion {
-  background: url("../img/cruise-minion.jpg") no-repeat;
+  background: url("../img/cruise-minion-desktop.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -2039,6 +2039,72 @@ button,
   top: 24px;
 }
 
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 120px 0;
+}
+
+.contacts__map {
+  width: 48.277%;
+  min-height: 306px;
+  background-color: aqua;
+}
+
+.contacts__info {
+  padding-top: 80px;
+  width: 43.104%;
+}
+
+.contacts__info p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 10px 0;
+}
+
+.contacts__info p:last-of-type {
+  margin-bottom: 45px;
+}
+
+.contacts-info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacts-info__item a {
+  color: #011C40;
+}
+
+.contacts-info__item svg {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.contacts-info__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 25px;
+  list-style-type: none;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2079,6 +2145,13 @@ button,
     }
   }
 */
+
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 1.5dppx) {
+  .booking {
+    background: url("../img/feedback-background-desktop@2x.jpg") no-repeat;
+    background-size: cover;
+  }
+}
 
 @media (max-width: 1023px) {
   .container {
@@ -2294,6 +2367,40 @@ button,
     margin: 0 auto;
     width: 60.33%;
     max-width: none;
+  }
+
+  .contacts {
+    padding: 100px 0;
+    gap: 30px;
+  }
+
+  .contacts__map {
+    width: auto;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    min-height: 335px;
+  }
+
+  .contacts__info {
+    width: auto;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    padding-top: 72px;
+  }
+
+  .contacts__info p:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  .contacts-info__list {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .booking {
+    background: url("../img/feedback-background-tablet@2x.jpg") no-repeat;
+    background-size: cover;
   }
 }
 
@@ -2545,6 +2652,22 @@ button,
   .booking-form p {
     text-align: center;
   }
+
+  .contacts {
+    padding: 65px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .contacts__map {
+    min-height: 316px;
+  }
+
+  .contacts__info {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2610,6 +2733,13 @@ button,
   }
 }
 
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .booking {
+    background: url("../img/feedback-background-mobile@2x.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
 @media (hover: hover) {
   .custom-select__item[aria-selected=true]:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.2);
@@ -2625,5 +2755,18 @@ button,
 
   .header-example__link--blue:hover:not(.focus-visible):not(span) {
     color: #ff1553;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+  .intro {
+    background: url("../img/intro-background@2x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .advantages {
+    background: url("../img/advantages-background@2x.jpg") no-repeat;
+    background-size: cover;
   }
 }

@@ -5,6 +5,8 @@ import './modules/header/locomotive-scroll';
 import {Burger} from './modules/header/burger';
 import {StickyHeader} from './modules/header/sticky-header';
 import {initLocomotiveScroll} from './modules/header/init-locomotive-scroll';
+import './modules/map';
+import {disableFocus} from './modules/no-focus';
 
 // ---------------------------------
 
@@ -14,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   initLocomotiveScroll();
   iosVhFix();
+  disableFocus();
 
   // Modules
   // ---------------------------------
