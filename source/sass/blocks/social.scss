@@ -21,6 +21,19 @@
 .social__link {
   display: flex;
 
+  &:focus {
+    box-shadow: 0 0 0 2px $color-dodger-blue;
+    outline:none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   & svg {
     @include vp-1023 {
       width: 16px;
