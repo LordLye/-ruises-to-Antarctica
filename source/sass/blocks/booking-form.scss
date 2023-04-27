@@ -42,6 +42,11 @@
     height: 43px;
     width: 100%;
     padding: 11px 16px;
+
+    &:focus {
+      box-shadow: 0 0 0 2px $color-dodger-blue;
+      outline:none;
+    }
   }
 }
 
@@ -91,15 +96,14 @@
     }
 
     & >input:focus+span::before {
-      box-shadow: 0 0 0 2px rgba(237, 240, 243, 1);
+      box-shadow: 0 0 0 2px $color-dodger-blue;
+      outline: none;
     }
 
     & >input:disabled+span::before {
       opacity: 0.3;
     }
   }
-
-
 }
 
 .booking-form__button {
@@ -110,4 +114,9 @@
   color: $color-tangaroa;
   padding: 14px;
   border: none;
+
+  &:focus {
+    box-shadow: 0 0 0 2px $color-dodger-blue;
+    outline:none;
+  }
 }

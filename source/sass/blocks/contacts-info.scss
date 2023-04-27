@@ -5,6 +5,19 @@
 
   & a {
     color: $color-tangaroa;
+
+    &:focus {
+      box-shadow: 0 0 0 2px $color-dodger-blue;
+      outline:none;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   & svg {

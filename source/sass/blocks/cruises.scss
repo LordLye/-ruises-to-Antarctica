@@ -57,10 +57,17 @@ line-height: 36px;
     display: flex;
     visibility:visible;
     flex-grow: 1;
+    box-shadow: 0 0 0 2px $color-dodger-blue;
+    outline:none;
   }
 
   &:hover,
   &:focus-within {
-    visibility: hidden;
+    box-shadow: 0 0 0 2px $color-dodger-blue;
+    outline:none;
+
+    & h3 {
+      visibility: hidden;
+    }
   }
 }

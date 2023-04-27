@@ -19,7 +19,7 @@
     transform: translateY(-100%);
   }
 
-  .container {
+  .main-header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,6 +28,19 @@
   &__logo {
     margin: 0;
     display: flex;
+
+    &:focus {
+      box-shadow: 0 0 0 2px $color-dodger-blue;
+      outline:none;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
 
     @media (max-width: 1023px) {
       margin: -5px 0 0 0;
@@ -41,7 +54,7 @@
     .is-open & {
       position: relative;
       z-index: 25;
-      padding-left: 36px;
+      margin-left: 36px;
       stroke: $color-tangaroa;
       color: $color-tangaroa;;
     }
@@ -140,7 +153,20 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
-    transition: color 0.3s ease;
+    color: $color-main-links;
+
+    &:focus {
+      box-shadow: 0 0 0 2px $color-dodger-blue;
+      outline:none;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
 
     @media (max-width:  1023px) {
       font-size: 14px;
@@ -153,24 +179,8 @@
       line-height: 22px;
     }
 
-    @media (hover: hover) {
-      &:hover:not(.focus-visible) {
-        &:not(span) {
-          color: #2c39f2;
-        }
-      }
-    }
-
     &--blue {
       color: #2c39f2;
-
-      @media (hover: hover) {
-        &:hover:not(.focus-visible) {
-          &:not(span) {
-            color: #ff1553;
-          }
-        }
-      }
     }
   }
 
@@ -187,7 +197,19 @@
    @media (max-width: 767px) {
       display: flex;
       position: relative;
-      transition: all 0.3s ease;
+
+      &:focus {
+        box-shadow: 0 0 0 2px $color-dodger-blue;
+        outline:none;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.6;
+      }
     }
 
     .is-open {

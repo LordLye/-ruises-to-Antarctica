@@ -16,29 +16,31 @@
 <body>
   <div class="wrapper">
     <header class="main-header header-example" data-header>
-      <div class="container">
+      <div class="main-header__container">
         <a class="header-example__logo" href="index.html">
           <svg width="70" height="38" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
         </a>
         <nav class="header-example__nav">
+          <span class="visually-hidden">Меню навигации.</span>
           <ul class="header-example__list">
             <li class="header-example__item">
-              <a class="header-example__link">Преимущества</a>
+              <a href="#advantages" class="header-example__link" tabindex="0">Преимущества</a>
             </li>
             <li class="header-example__item">
-              <a class="header-example__link">Направления</a>
+              <a href="#" class="header-example__link" tabindex="0">Направления</a>
             </li>
             <li class="header-example__item">
-              <a class="header-example__link">Ближайшие круизы</a>
+              <a href="#cruises" class="header-example__link" tabindex="0">Ближайшие круизы</a>
             </li>
             <li class="header-example__item">
-              <a class="header-example__link">Контакты</a>
+              <a href="#contacts" class="header-example__link" tabindex="0">Контакты</a>
             </li>
           </ul>
         </nav>
         <button class="header-example__burger" type="button" data-burger>
+          <span class="visually-hidden">Кнопка меню.</span>
           <svg class="header-example__burger-text" width="24" height="12" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#burger-menu"></use>
           </svg>
@@ -50,7 +52,7 @@
       </div>
     </header>
     <main>
-      <div class="container__max">
+      <div class="container-max">
         <div class="intro">
           <div class="intro__text-block">
             <h1>Круизы<br> в Антарктику </h1>
@@ -70,8 +72,8 @@
           <img src="./img/pinguins.jpg" srcset="./img/pinguins@2x.jpg 2x" alt="Три пингвина" width="560" height="301">
         </div>
       </div>
-      <div class="container__max">
-        <div class="advantages">
+      <div class="container-max">
+        <div class="advantages" id="advantages">
           <h2>Преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -96,14 +98,14 @@
                 <use xlink:href="img/sprite.svg#excursion-tours"></use>
               </svg>
               <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
-              <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac
-                c опытными экскурсоводами.</p>
+              <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac
+                c&nbsp;опытными экскурсоводами.</p>
             </li>
           </ul>
         </div>
       </div>
       <div class="container">
-        <div class="cruises">
+        <div class="cruises" id="cruises">
           <h2 class="cruises__title">Ближайшие круизы</h2>
           <ul class="cruises__list">
             <li class="cruises__item cruises-card cruises-card--astoria" tabindex="0">
@@ -111,14 +113,14 @@
               <div class="cruises-card__popup">
                 <h3>Круиз “Астория”</h3>
                 <h4>Маршрут</h4>
-                <p>Аргентина - Фолклендские острова - Антарктида</p>
+                <p>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида</p>
                 <h4>Порт отправления</h4>
                 <p>Ушуайя</p>
                 <h4>Продолжительность</h4>
                 <p>11 дней</p>
                 <h4>Цена</h4>
-                <p>от 11500 $</p>
-                <button class="button" type="button">Забронировать</button>
+                <p>от&nbsp;11500&nbsp;$</p>
+                <a href="#" class="button">Забронировать</a>
               </div>
             </li>
             <li class="cruises__item cruises-card cruises-card--elayn" tabindex="0">
@@ -126,14 +128,14 @@
               <div class="cruises-card__popup">
                 <h3>Круиз “Элайн”</h3>
                 <h4>Маршрут</h4>
-                <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                <p>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</p>
                 <h4>Порт отправления</h4>
                 <p>Буэнос-Айрес</p>
                 <h4>Продолжительность</h4>
                 <p>20 дней</p>
                 <h4>Цена</h4>
-                <p>от 14500 $</p>
-                <button class="button" type="button">Забронировать</button>
+                <p>от&nbsp;14500&nbsp;$</p>
+                <a href="#" class="button">Забронировать</a>
               </div>
             </li>
             <li class="cruises__item cruises-card cruises-card--atlantis" tabindex="0">
@@ -141,14 +143,14 @@
               <div class="cruises-card__popup">
                 <h3>Круиз "Атлантис"</h3>
                 <h4>Маршрут</h4>
-                <p>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</p>
+                <p>Аргентина&nbsp;&mdash; Южная Георгия и&nbsp;Южные Сандвичевы Острова&nbsp;&mdash; Антарктида</p>
                 <h4>Порт отправления</h4>
                 <p>Ушуайя</p>
                 <h4>Продолжительность</h4>
                 <p>15 дней</p>
                 <h4>Цена</h4>
-                <p>от 14500 $</p>
-                <button class="button" type="button">Забронировать</button>
+                <p>от&nbsp;14500&nbsp;$</p>
+                <a href="#" class="button">Забронировать</a>
               </div>
             </li>
             <li class="cruises__item cruises-card cruises-card--odissey" tabindex="0">
@@ -156,14 +158,14 @@
               <div class="cruises-card__popup">
                 <h3>Круиз "Одиссей"</h3>
                 <h4>Маршрут</h4>
-                <p>Чили - Антарктида</p>
+                <p>Чили&nbsp;&mdash; Антарктида</p>
                 <h4>Порт отправления</h4>
                 <p>Пунта-Аренас</p>
                 <h4>Продолжительность</h4>
                 <p>13 дней</p>
                 <h4>Цена</h4>
-                <p>от 9700 $</p>
-                <button class="button" type="button">Забронировать</button>
+                <p>от&nbsp;9700&nbsp;$</p>
+                <a href="#" class="button">Забронировать</a>
               </div>
             </li>
             <li class="cruises__item cruises-card cruises-card--olimpia" tabindex="0">
@@ -171,14 +173,14 @@
               <div class="cruises-card__popup">
                 <h3>Круиз "Олимпия"</h3>
                 <h4>Маршрут</h4>
-                <p>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</p>
+                <p>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида</p>
                 <h4>Порт отправления</h4>
                 <p>Ушуайя</p>
                 <h4>Продолжительность</h4>
                 <p>21 дней</p>
                 <h4>Цена</h4>
-                <p>от 18600 $</p>
-                <button class="button" type="button">Забронировать</button>
+                <p>от&nbsp;18600&nbsp;$</p>
+                <a href="#" class="button">Забронировать</a>
               </div>
             </li>
             <li class="cruises__item cruises-card cruises-card--avrora" tabindex="0">
@@ -186,14 +188,14 @@
               <div class="cruises-card__popup">
                 <h3>Круиз "Аврора"</h3>
                 <h4>Маршрут</h4>
-                <p>Аргентина - Антарктида - Чили</p>
+                <p>Аргентина&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</p>
                 <h4>Порт отправления</h4>
                 <p>Ушуайя</p>
                 <h4>Продолжительность</h4>
                 <p>14 дней</p>
                 <h4>Цена</h4>
-                <p>от 11700 $</p>
-                <button class="button" type="button">Забронировать</button>
+                <p>от&nbsp;11700&nbsp;$</p>
+                <a href="#" class="button">Забронировать</a>
               </div>
             </li>
             <li class="cruises__item cruises-card cruises-card--leonor" tabindex="0">
@@ -201,44 +203,43 @@
               <div class="cruises-card__popup">
                 <h3>Круиз "Леонор"</h3>
                 <h4>Маршрут</h4>
-                <p>Чили - Южная Георгия - Антарктида - Аргентина</p>
+                <p>Чили&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида&nbsp;&mdash; Аргентина</p>
                 <h4>Порт отправления</h4>
                 <p>Пунта-Аренас</p>
                 <h4>Продолжительность</h4>
                 <p>17 дней</p>
                 <h4>Цена</h4>
-                <p>от 12500 $</p>
-                <button class="button" type="button">Забронировать</button>
+                <p>от&nbsp;12500&nbsp;$</p>
+                <a href="#" class="button">Забронировать</a>
               </div>
             </li>
             <li class="cruises__item cruises-card cruises-card--minion" tabindex="0">
-              <h3>Круиз "Минион - 1"</h3>
+              <h3>Круиз &laquo;Минион&nbsp;&mdash; 1&raquo;</h3>
               <div class="cruises-card__popup">
-                <h3>Круиз "Минион - 1"</h3>
+                <h3>Круиз &laquo;Минион&nbsp;&mdash; 1&raquo;</h3>
                 <h4>Маршрут</h4>
-                <p>Аргентина - Антарктида</p>
+                <p>Аргентина&nbsp;&mdash; Антарктида</p>
                 <h4>Порт отправления</h4>
                 <p>Ушуайя</p>
                 <h4>Продолжительность</h4>
                 <p>11 дней</p>
                 <h4>Цена</h4>
-                <p>от 12300 $</p>
-                <button class="button" type="button">Забронировать</button>
+                <p>от&nbsp;12300&nbsp;$</p>
+                <a href="#" class="button">Забронировать</a>
               </div>
             </li>
           </ul>
         </div>
       </div>
-      <div class="container__max">
+      <div class="container-max">
         <div class="booking">
           <div class="booking__text">
             <h2>Раннее бронирование</h2>
-            <p>Забронируйте тур за 3-6 месяцев
-              до даты выезда и сэкономьте до 50%</p>
+            <p>Забронируйте тур за&nbsp;3&ndash;6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
           </div>
           <div class="booking__form" data-form-validate data-callback="base">
             <form class="booking-form" method="post" action="https://echo.htmlacademy.ru/" autocomplete="off">
-              <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+              <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
               <div data-on-input-validate data-validate-type="text" data-limitation="name"
                 data-message-base="Поле обязательно к заполнению" data-required>
                 <label class="booking-form__input-wrapper">
@@ -261,8 +262,9 @@
                 <div data-on-input-validate data-validate-type="checkbox"
                   data-message-base="Поле обязательно к заполнению" data-required>
                   <label>
-                    <input class="visually-hidden" type="checkbox" name="agreement" checked required>
-                    <span>Я согласен на обработку моих персональных данных</span>
+                    <input class="visually-hidden" type="checkbox" name="agreement"
+                      aria-label="Согласие на обработку персональных данных" checked required>
+                    <span>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
                   </label>
                 </div>
               </div>
@@ -273,21 +275,20 @@
         </div>
       </div>
       <div class="container">
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="contacts__map map" id="map">
-            <h2 class="visually-hidden">Наш офис на карте</h2>
-
+            <h2 class="visually-hidden">Наш офис на&nbsp;карте</h2>
           </div>
           <div class="contacts__info">
-            <p>У вас ещё остались вопросы или сомнения?<br>
-              Приезжайте к нам в офис и мы вам все расскажем.</p>
+            <p>У&nbsp;вас ещё остались вопросы или сомнения?<br>
+              Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
             <div class="contacts-info">
               <ul class="contacts-info__list">
                 <li class="contacts-info__item">
                   <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#mark-icon"></use>
                   </svg>
-                  <span>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</span>
+                  <span>г.&nbsp;Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8</span>
                 </li>
                 <li class="contacts-info__item">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -306,41 +307,42 @@
     <footer class="main-footer">
       <div class="container">
         <a class="main-footer__logo" href="index.html">
+          <span class="visually-hidden">Логотип.</span>
           <svg width="70" height="38" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#logo"></use>
           </svg>
         </a>
         <ul class="main-footer__list">
           <li class="main-footer__item">
-            <a class="main-footer__link">Преимущества</a>
+            <a href="#advantages" class="main-footer__link" tabindex="0">Преимущества</a>
           </li>
           <li class="main-footer__item">
-            <a class="main-footer__link">Направления</a>
+            <a href="#" class="main-footer__link" tabindex="0">Направления</a>
           </li>
           <li class="main-footer__item">
-            <a class="main-footer__link">Ближайшие круизы</a>
+            <a href="#cruises" class="main-footer__link" tabindex="0">Ближайшие круизы</a>
           </li>
           <li class="main-footer__item">
-            <a class="main-footer__link">Контакты</a>
+            <a href="#contacts" class="main-footer__link" tabindex="0">Контакты</a>
           </li>
         </ul>
-        <ul class="social social__list">
+        <ul class="social">
           <li class="social__item">
-            <a class="social__link">
+            <a href="#" class="social__link">
               <svg width="12" height="20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#ok-icon"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link">
+            <a href="#" class="social__link">
               <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#star-icon"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link">
+            <a href="#" class="social__link">
               <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#face-icon"></use>
               </svg>
@@ -351,37 +353,9 @@
     </footer>
   </div>
 
-  <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset button" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset button" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=29f46812-a652-4701-8c33-21977dd7ac2e" type="text/javascript">
-	</script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=29f46812-a652-4701-8c33-21977dd7ac2e"
+    type="text/javascript">
+    </script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
