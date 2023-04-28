@@ -1,6 +1,6 @@
 .cruises-card {
   position: relative;
-  padding: 23px 30px 0 30px;
+  padding: 0px 30px 0 30px;
   min-height: 386px;
 
   @include vp-1023 {
@@ -11,7 +11,7 @@
     position: absolute;
     margin: 0;
     padding-right: 10px;
-    bottom: 20px;
+    bottom: 22px;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
@@ -263,13 +263,12 @@
 .cruises-card__popup {
   visibility: hidden;
   flex-direction: column;
-  margin-top: -23px;
   margin-left: -30px;
   width: calc(100% + 60px);
   min-height: 386px;
-  padding: 25px 25px;
+  padding: 30px 25px 35px 25px;
   background: $color-tangaroa;
-  height: calc(100% + 23px);
+  height: 100%;
 
   @include vp-1023 {
     width: calc(100% + 70px);
@@ -284,7 +283,7 @@
 
   & h3 {
     position: static;
-    margin: 0 0 18px 0;
+    margin: 0 0 13px 0;
     color: $color-alice-blue;
     font-weight: 500;
     font-size: 18px;
@@ -300,11 +299,15 @@
   }
 
   & p {
-    margin: 0 0 12px 0;
+    margin: 0 0 11px 0;
     color: $color-quartz;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+
+    &:last-of-type {
+      margin-bottom: 5px;
+    }
   }
 
   & a {
@@ -312,12 +315,20 @@
     font-size: 14px;
     line-height: 21px;
     background: $color-alice-blue;
-    padding: 8px 15px;
+    padding: 9px 15px;
     margin: auto 0 0 0;
 
     &:focus {
       box-shadow: 0 0 0 2px $color-dodger-blue;
-      outline:none;
+      outline: none;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
     }
   }
 }

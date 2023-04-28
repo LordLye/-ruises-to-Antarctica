@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  padding: 120px 0;
+  padding: 115px 0 125px 0;
 
   @include vp-1023 {
     padding: 100px 0;
@@ -57,7 +57,7 @@
     margin: 0 0 10px 0;
 
     &:last-of-type {
-      margin-bottom: 45px;
+      margin-bottom: 32px;
 
       @include vp-1023 {
         margin-bottom: 40px;

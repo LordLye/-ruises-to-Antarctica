@@ -27,9 +27,9 @@
 }
 
 .descript__text-block {
-  max-width: 512px;
+  max-width: 546px;
   margin-right: auto;
-  padding-top: 66px;
+  padding-top: 56px;
   padding-right: 30px;
 
   @include vp-1023 {
@@ -45,7 +45,7 @@
     font-weight: 600;
     font-size: 28px;
     line-height: 42px;
-    margin: 0 0 40px 0;
+    margin: 0 0 24px 0;
 
     @include vp-1023 {
       font-size: 26px;

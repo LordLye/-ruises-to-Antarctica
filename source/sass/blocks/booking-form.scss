@@ -1,6 +1,6 @@
 .booking-form {
   background: $color-tangaroa;
-  padding: 50px;
+  padding: 44px 50px 50px 50px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -22,7 +22,7 @@
     font-size: 18px;
     line-height: 27px;
     color: $color-alice-blue;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
 
     @include vp-767 {
       text-align: center;
@@ -42,6 +42,9 @@
     height: 43px;
     width: 100%;
     padding: 11px 16px;
+    border: none;
+    font-size: 14px;
+line-height: 21px;
 
     &:focus {
       box-shadow: 0 0 0 2px $color-dodger-blue;
@@ -112,11 +115,19 @@
   font-size: 14px;
   line-height: 21px;
   color: $color-tangaroa;
-  padding: 14px;
+  padding: 10px 14px;
   border: none;
 
   &:focus {
     box-shadow: 0 0 0 2px $color-dodger-blue;
     outline:none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
