@@ -56,7 +56,6 @@
       margin-left: 36px;
       stroke: $color-tangaroa;
       color: $color-tangaroa;
-      ;
     }
 
     & svg {
@@ -73,6 +72,8 @@
   }
 
   &__nav {
+    margin-top: 1px;
+
     @media (max-width: 767px) {
       background-color: $color-alice-blue;
       bottom: 0;
@@ -265,8 +266,4 @@
 
 .section-example {
   height: 100vh;
-}
-
-.header-example__nav {
-  margin-top: 1px;
 }
