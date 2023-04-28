@@ -22,7 +22,7 @@
 
   & :focus {
     box-shadow: 0 0 0 2px $color-dodger-blue;
-    outline:none;
+    outline: none;
   }
 
   @include vp-1023 {

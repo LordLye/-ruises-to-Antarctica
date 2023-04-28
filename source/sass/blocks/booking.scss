@@ -11,7 +11,7 @@
   @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
     background-color: $light-sky-blue;
     background: url("../img/feedback-background-desktop@2x.jpg") no-repeat;
-  background-size: cover;
+    background-size: cover;
   }
 
   @include vp-1023 {

@@ -108,7 +108,7 @@
     }
   }
 
-  input:checked + .custom-toggle__icon {
+  input:checked+.custom-toggle__icon {
     border: 1.5px solid #2c39f2;
 
     &::before {
