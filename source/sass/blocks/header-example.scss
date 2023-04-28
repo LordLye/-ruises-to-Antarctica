@@ -1,6 +1,6 @@
 .header-example {
   background-color: rgb(255, 255, 255, 0);
-  padding: 35px 0 35px 0;
+  padding: 40px 0 35px 0;
   z-index: 30;
   transition: transform 0.3s ease, background-color 0.3s ease;
 
@@ -25,7 +25,6 @@
 
   .main-header__container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
 
@@ -109,8 +108,8 @@
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    max-width: 600px;
-    padding: 0;
+    max-width: 1050px;
+    padding: 0 0 0 10px;
 
    @media (max-width: 1023px) {
       margin: 0;

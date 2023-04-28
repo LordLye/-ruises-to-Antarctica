@@ -1,6 +1,5 @@
 .contacts-info__item {
   display: flex;
-  align-items: center;
   gap: 10px;
 
   & a {
@@ -27,6 +26,22 @@
   & p {
     font-size: 16px;
     line-height: 24px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    & br {
+      display: none;
+    }
+
+    @include vp-1023 {
+      align-items: start;
+
+      & br {
+        display: block;
+      }
+    }
   }
 
   @include vp-1023 {
