@@ -4,6 +4,10 @@
   z-index: 30;
   transition: transform 0.3s ease, background-color 0.3s ease;
 
+  @media (max-width: 1023px) {
+    padding: 26px 0 25px 3px;
+  }
+
   @media (max-width: 767px) {
     padding: 25px 0 25px 0;
   }
@@ -40,10 +44,6 @@
 
     &:active {
       opacity: 0.6;
-    }
-
-    @media (max-width: 1023px) {
-      margin: -5px 0 0 0;
     }
 
    @media (max-width: 767px) {

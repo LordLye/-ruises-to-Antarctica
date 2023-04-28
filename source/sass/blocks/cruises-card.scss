@@ -16,6 +16,10 @@
     font-size: 18px;
     line-height: 27px;
     color: $color-alice-blue;
+
+    @include vp-1023 {
+      bottom: 27px;
+    }
   }
 
   &--astoria {
@@ -275,6 +279,7 @@
     height: calc(100% + 28px);
     margin-left: -35px;
     margin-top: -28px;
+    padding: 30px 35px 35px 35px;
   }
 
   @include vp-767 {

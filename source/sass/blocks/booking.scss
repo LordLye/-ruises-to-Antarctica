@@ -17,8 +17,8 @@
     background-size: cover;
     flex-direction: column;
     align-items: center;
-    padding: 100px 50px 100px 50px;
-    gap: 60px;
+    padding: 88px 50px 100px 50px;
+    gap: 52px;
   }
 
   @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
@@ -51,6 +51,7 @@
     align-items: center;
     text-align: center;
     padding-top: 0;
+    gap: 5px;
   }
 
   @include vp-767 {

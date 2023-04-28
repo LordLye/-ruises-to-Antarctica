@@ -8,7 +8,7 @@
 
     &:focus {
       box-shadow: 0 0 0 2px $color-dodger-blue;
-      outline:none;
+      outline: none;
     }
 
     &:hover {
@@ -23,6 +23,27 @@
   & svg {
     flex-shrink: 0;
   }
+
+  & p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include vp-1023 {
+    align-items: start;
+
+    & br {
+      display: block;
+    }
+
+    & p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    & svg {
+      margin-top: 3px;
+    }
+  }
 }
 
 .contacts-info__list {
@@ -34,6 +55,6 @@
   list-style-type: none;
 
   @include vp-1023 {
-    gap: 30px;
+    gap: 21px;
   }
 }
