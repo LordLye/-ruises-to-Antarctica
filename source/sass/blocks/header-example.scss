@@ -9,7 +9,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 25px 0 25px 0;
+    padding: 20px 0 25px 0;
   }
 
   &--sticky {
@@ -81,7 +81,7 @@
       left: 36px;
       opacity: 0;
       margin: 0;
-      padding: 75px 30px 15px 20px;
+      padding: 75px 30px 15px 15px;
       position: fixed;
       pointer-events: none;
       top: 0;
@@ -140,12 +140,12 @@
      @media (max-width: 1023px) {
         margin: 0 23px 0 0;
       }
+    }
 
-      @media (max-width: 767px) {
-        display: flex;
-        align-items: center;
-        margin: 0;
-      }
+    @media (max-width: 767px) {
+      display: flex;
+      align-items: center;
+      margin: 0;
     }
   }
 

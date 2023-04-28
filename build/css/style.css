@@ -1627,10 +1627,9 @@ button,
   position: relative;
   min-height: 650px;
   margin-top: -108px;
-  background-image: url("../img/intro-background.jpg");
+  background-image: url("../img/intro-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -1698,7 +1697,7 @@ button,
 }
 
 .advantages {
-  background-image: url("../img/advantages-background.jpg");
+  background-image: url("../img/advantages-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 562px;
@@ -2311,6 +2310,18 @@ button,
 */
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url("../img/intro-background-desktop@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .advantages {
+    background-image: url("../img/advantages-background-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .cruises-card--astoria {
     background: url("../img/cruise-astoria-desktop@2x.jpg") no-repeat;
     background-size: cover;
@@ -2424,7 +2435,14 @@ button,
     height: 16px;
   }
 
+  .social__link svg {
+    width: auto;
+  }
+
   .intro {
+    background-image: url("../img/intro-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 670px;
     -webkit-filter: none;
     filter: none;
@@ -2466,6 +2484,9 @@ button,
   }
 
   .advantages {
+    background-image: url("../img/advantages-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 90px 45px 100px 45px;
   }
 
@@ -2709,6 +2730,18 @@ button,
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url("../img/intro-background-tablet@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .advantages {
+    background-image: url("../img/advantages-background-tablet@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .cruises-card--astoria {
     background: url("../img/cruise-astoria-tablet@2x.jpg") no-repeat;
     background-size: cover;
@@ -2774,7 +2807,7 @@ button,
   }
 
   .header-example {
-    padding: 25px 0 25px 0;
+    padding: 20px 0 25px 0;
   }
 
   .header-example__logo {
@@ -2805,7 +2838,7 @@ button,
     left: 36px;
     opacity: 0;
     margin: 0;
-    padding: 75px 30px 15px 20px;
+    padding: 75px 30px 15px 15px;
     position: fixed;
     pointer-events: none;
     top: 0;
@@ -2842,7 +2875,7 @@ button,
     padding-left: 10px;
   }
 
-  .header-example__item:not(:last-child) {
+  .header-example__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2888,10 +2921,14 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 30px;
+    gap: 27px;
     -webkit-box-align: self-start;
     -ms-flex-align: self-start;
     align-items: self-start;
+  }
+
+  .main-footer__logo {
+    margin-top: 0;
   }
 
   .main-footer__list {
@@ -2902,14 +2939,24 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 0;
+    gap: 17px;
   }
 
   .social {
-    margin-top: 0;
+    margin-top: 0px;
+  }
+
+  .intro {
+    background-image: url("../img/intro-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 541px;
+    -webkit-filter: none;
+    filter: none;
   }
 
   .intro__text-block {
-    padding: 185px 15px 20px 15px;
+    padding: 217px 15px 20px 15px;
   }
 
   .intro__text-block br {
@@ -2927,7 +2974,7 @@ button,
   }
 
   .descript {
-    padding: 65px 0 85px 0;
+    padding: 56px 0 86px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2940,7 +2987,7 @@ button,
   }
 
   .descript__text-block {
-    margin: 0 0 50px 0;
+    margin: 0 0 34px 0;
     padding: 0;
   }
 
@@ -2950,7 +2997,16 @@ button,
   }
 
   .advantages {
-    padding: 65px 15px 65px 15px;
+    background-image: url("../img/advantages-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 57px 15px 65px 15px;
+    gap: 30px;
+  }
+
+  .advantages h2 {
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .advantages__list {
@@ -2958,26 +3014,47 @@ button,
     grid-template-columns: auto;
   }
 
+  .advantages__item h3 {
+    max-width: 75%;
+  }
+
   .advantages__item {
-    padding: 25px 14px 25px 20px;
+    padding: 25px 14px 18px 20px;
   }
 
   .advantages__item:nth-child(2n) {
-    padding: 26px 22px 25px 20px;
+    padding: 26px 22px 18px 20px;
+  }
+
+  .advantages__item:nth-child(3n) {
+    padding: 26px 17px 18px 20px;
+  }
+
+  .advantages__item:nth-child(3n) h3 {
+    margin-bottom: 0;
   }
 
   .cruises {
-    padding: 65px 15px 65px 15px;
+    padding: 57px 10px 65px 10px;
   }
 
   .cruises__title {
     font-size: 24px;
     line-height: 36px;
+    margin-bottom: 30px;
   }
 
   .cruises__list {
     -ms-grid-columns: (minmax(250px, 380px))[1];
     grid-template-columns: repeat(1, minmax(250px, 380px));
+  }
+
+  .cruises-card {
+    padding: 28px 25px 0 25px;
+  }
+
+  .cruises-card h3 {
+    bottom: 17px;
   }
 
   .cruises-card--astoria {
@@ -3027,12 +3104,14 @@ button,
   .booking {
     background: url("../img/feedback-background-mobile.jpg") no-repeat;
     background-size: cover;
-    padding: 65px 15px;
-    gap: 40px;
+    padding: 60px 15px 65px 15px;
+    gap: 35px;
   }
 
   .booking__text {
     width: 89%;
+    line-height: 22px;
+    gap: 12px;
   }
 
   .booking__text h2 {
@@ -3047,16 +3126,35 @@ button,
   }
 
   .booking-form {
-    padding: 40px 30px 40px 30px;
+    padding: 36px 30px 40px 30px;
     width: 100%;
   }
 
   .booking-form p {
     text-align: center;
+    line-height: 25px;
+  }
+
+  .booking-form__checkbox {
+    margin-bottom: 7px;
+  }
+
+  .booking-form__checkbox label span {
+    line-height: 12px;
+    gap: 10px;
+  }
+
+  .booking-form__checkbox label {
+    margin-top: -1px;
+  }
+
+  .booking-form__checkbox label > span::before {
+    width: 20px;
+    height: 20px;
   }
 
   .contacts {
-    padding: 65px 0;
+    padding: 58px 0 71px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
@@ -3140,6 +3238,18 @@ button,
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url("../img/intro-background-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .advantages {
+    background-image: url("../img/advantages-background-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .cruises-card--astoria {
     background: url("../img/cruise-astoria-mobile@2x.jpg") no-repeat;
     background-size: cover;
@@ -3193,20 +3303,5 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
-  .intro {
-    background-image: url("../img/intro-background@2x.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .advantages {
-    background-image: url("../img/advantages-background@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }

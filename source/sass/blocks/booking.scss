@@ -29,8 +29,8 @@
   @include vp-767 {
     background: url("../img/feedback-background-mobile.jpg") no-repeat;
     background-size: cover;
-    padding: 65px 15px;
-    gap: 40px;
+    padding: 60px 15px 65px 15px;
+    gap: 35px;
   }
 
   @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
@@ -56,6 +56,8 @@
 
   @include vp-767 {
     width: 89%;
+    line-height: 22px;
+    gap: 12px;
   }
 
   & h2 {
