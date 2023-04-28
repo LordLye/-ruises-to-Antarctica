@@ -1,4 +1,5 @@
 .advantages {
+  background-color: $light-sky-blue;
   background-image: url('../img/advantages-background-desktop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,12 +11,14 @@
   gap: 49px;
 
   @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background-color: $light-sky-blue;
     background-image: url("../img/advantages-background-desktop@2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   @include vp-1023 {
+    background-color: $light-sky-blue;
     background-image: url("../img/advantages-background-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,12 +26,14 @@
   }
 
   @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
+    background-color: $light-sky-blue;
     background-image: url("../img/advantages-background-tablet@2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   @include vp-767 {
+    background-color: $light-sky-blue;
     background-image: url("../img/advantages-background-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,6 +42,7 @@
   }
 
   @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
+    background-color: $light-sky-blue;
     background-image: url("../img/advantages-background-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;

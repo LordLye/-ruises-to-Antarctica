@@ -1621,6 +1621,7 @@ button,
   position: relative;
   min-height: 650px;
   margin-top: -75px;
+  background-color: rgb(45, 142, 238);
   background-image: url("../img/intro-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1691,6 +1692,7 @@ button,
 }
 
 .advantages {
+  background-color: #89caf5;
   background-image: url("../img/advantages-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1835,6 +1837,7 @@ button,
   position: relative;
   padding: 0px 30px 0 30px;
   min-height: 386px;
+  background-size: cover;
 }
 
 .cruises-card h3 {
@@ -1849,42 +1852,50 @@ button,
 }
 
 .cruises-card--astoria {
-  background: url("../img/cruise-astoria-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-astoria-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--elayn {
-  background: url("../img/cruise-astoria-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-astoria-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--atlantis {
-  background: url("../img/cruise-atlantis-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-atlantis-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--odissey {
-  background: url("../img/cruise-odissey-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-odissey-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--olimpia {
-  background: url("../img/cruise-olimpia-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-olimpia-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--avrora {
-  background: url("../img/cruise-avrora-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-avrora-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--leonor {
-  background: url("../img/cruise-leonor-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-leonor-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--minion {
-  background: url("../img/cruise-minion-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-minion-desktop.jpg");
   background-size: cover;
 }
 
@@ -1959,6 +1970,7 @@ button,
 }
 
 .booking {
+  background-color: #89caf5;
   background: url("../img/feedback-background-desktop.jpg") no-repeat;
   background-size: cover;
   min-height: 555px;
@@ -2315,58 +2327,53 @@ button,
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 1.5dppx) {
   .intro {
+    background-color: rgb(45, 142, 238);
     background-image: url("../img/intro-background-desktop@2x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .advantages {
+    background-color: #89caf5;
     background-image: url("../img/advantages-background-desktop@2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .cruises-card--astoria {
-    background: url("../img/cruise-astoria-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-desktop@2x.jpg");
   }
 
   .cruises-card--elayn {
-    background: url("../img/cruise-astoria-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-desktop@2x.jpg");
   }
 
   .cruises-card--atlantis {
-    background: url("../img/cruise-atlantis-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-atlantis-desktop@2x.jpg");
   }
 
   .cruises-card--odissey {
-    background: url("../img/cruise-odissey-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-odissey-desktop@2x.jpg");
   }
 
   .cruises-card--olimpia {
-    background: url("../img/cruise-olimpia-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-olimpia-desktop@2x.jpg");
   }
 
   .cruises-card--avrora {
-    background: url("../img/cruise-avrora-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-avrora-desktop@2x.jpg");
   }
 
   .cruises-card--leonor {
-    background: url("../img/cruise-leonor-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-leonor-desktop@2x.jpg");
   }
 
   .cruises-card--minion {
-    background: url("../img/cruise-minion-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-minion-desktop@2x.jpg");
   }
 
   .booking {
+    background-color: #89caf5;
     background: url("../img/feedback-background-desktop@2x.jpg") no-repeat;
     background-size: cover;
   }
@@ -2444,6 +2451,7 @@ button,
   }
 
   .intro {
+    background-color: rgb(45, 142, 238);
     background-image: url("../img/intro-background-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -2490,6 +2498,7 @@ button,
   }
 
   .advantages {
+    background-color: #89caf5;
     background-image: url("../img/advantages-background-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -2583,43 +2592,35 @@ button,
   }
 
   .cruises-card--astoria {
-    background: url("../img/cruise-astoria-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-tablet.jpg");
   }
 
   .cruises-card--elayn {
-    background: url("../img/cruise-astoria-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-tablet.jpg");
   }
 
   .cruises-card--atlantis {
-    background: url("../img/cruise-atlantis-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-atlantis-tablet.jpg");
   }
 
   .cruises-card--odissey {
-    background: url("../img/cruise-odissey-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-odissey-tablet.jpg");
   }
 
   .cruises-card--olimpia {
-    background: url("../img/cruise-olimpia-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-olimpia-tablet.jpg");
   }
 
   .cruises-card--avrora {
-    background: url("../img/cruise-avrora-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-avrora-tablet.jpg");
   }
 
   .cruises-card--leonor {
-    background: url("../img/cruise-leonor-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-leonor-tablet.jpg");
   }
 
   .cruises-card--minion {
-    background: url("../img/cruise-minion-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-minion-tablet.jpg");
   }
 
   .cruises-card__popup {
@@ -2631,6 +2632,7 @@ button,
   }
 
   .booking {
+    background-color: #89caf5;
     background: url("../img/feedback-background-tablet.jpg") no-repeat;
     background-size: cover;
     -webkit-box-orient: vertical;
@@ -2747,58 +2749,53 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .intro {
+    background-color: rgb(45, 142, 238);
     background-image: url("../img/intro-background-tablet@2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .advantages {
+    background-color: #89caf5;
     background-image: url("../img/advantages-background-tablet@2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .cruises-card--astoria {
-    background: url("../img/cruise-astoria-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-tablet@2x.jpg");
   }
 
   .cruises-card--elayn {
-    background: url("../img/cruise-astoria-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-tablet@2x.jpg");
   }
 
   .cruises-card--atlantis {
-    background: url("../img/cruise-atlantis-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-atlantis-tablet@2x.jpg");
   }
 
   .cruises-card--odissey {
-    background: url("../img/cruise-odissey-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-odissey-tablet@2x.jpg");
   }
 
   .cruises-card--olimpia {
-    background: url("../img/cruise-olimpia-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-olimpia-tablet@2x.jpg");
   }
 
   .cruises-card--avrora {
-    background: url("../img/cruise-avrora-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-avrora-tablet@2x.jpg");
   }
 
   .cruises-card--leonor {
-    background: url("../img/cruise-leonor-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-leonor-tablet@2x.jpg");
   }
 
   .cruises-card--minion {
-    background: url("../img/cruise-minion-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-minion-tablet@2x.jpg");
   }
 
   .booking {
+    background-color: #89caf5;
     background: url("../img/feedback-background-tablet@2x.jpg") no-repeat;
     background-size: cover;
   }
@@ -2963,6 +2960,7 @@ button,
   }
 
   .intro {
+    background-color: rgb(45, 142, 238);
     background-image: url("../img/intro-background-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -3014,6 +3012,7 @@ button,
   }
 
   .advantages {
+    background-color: #89caf5;
     background-image: url("../img/advantages-background-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -3075,43 +3074,35 @@ button,
   }
 
   .cruises-card--astoria {
-    background: url("../img/cruise-astoria-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-mobile.jpg");
   }
 
   .cruises-card--elayn {
-    background: url("../img/cruise-astoria-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-mobile.jpg");
   }
 
   .cruises-card--atlantis {
-    background: url("../img/cruise-atlantis-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-atlantis-mobile.jpg");
   }
 
   .cruises-card--odissey {
-    background: url("../img/cruise-odissey-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-odissey-mobile.jpg");
   }
 
   .cruises-card--olimpia {
-    background: url("../img/cruise-olimpia-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-olimpia-mobile.jpg");
   }
 
   .cruises-card--avrora {
-    background: url("../img/cruise-avrora-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-avrora-mobile.jpg");
   }
 
   .cruises-card--leonor {
-    background: url("../img/cruise-leonor-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-leonor-mobile.jpg");
   }
 
   .cruises-card--minion {
-    background: url("../img/cruise-minion-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-minion-mobile.jpg");
   }
 
   .cruises-card__popup {
@@ -3119,6 +3110,7 @@ button,
   }
 
   .booking {
+    background-color: #89caf5;
     background: url("../img/feedback-background-mobile.jpg") no-repeat;
     background-size: cover;
     padding: 60px 15px 65px 15px;
@@ -3256,58 +3248,53 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .intro {
+    background-color: rgb(45, 142, 238);
     background-image: url("../img/intro-background-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .advantages {
+    background-color: #89caf5;
     background-image: url("../img/advantages-background-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .cruises-card--astoria {
-    background: url("../img/cruise-astoria-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-mobile@2x.jpg");
   }
 
   .cruises-card--elayn {
-    background: url("../img/cruise-astoria-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-mobile@2x.jpg");
   }
 
   .cruises-card--atlantis {
-    background: url("../img/cruise-atlantis-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-atlantis-mobile@2x.jpg");
   }
 
   .cruises-card--odissey {
-    background: url("../img/cruise-odissey-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-odissey-mobile@2x.jpg");
   }
 
   .cruises-card--olimpia {
-    background: url("../img/cruise-olimpia-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-olimpia-mobile@2x.jpg");
   }
 
   .cruises-card--avrora {
-    background: url("../img/cruise-avrora-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-avrora-mobile@2x.jpg");
   }
 
   .cruises-card--leonor {
-    background: url("../img/cruise-leonor-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-leonor-mobile@2x.jpg");
   }
 
   .cruises-card--minion {
-    background: url("../img/cruise-minion-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-minion-mobile@2x.jpg");
   }
 
   .booking {
+    background-color: #89caf5;
     background: url("../img/feedback-background-mobile@2x.jpg") no-repeat;
     background-size: cover;
   }
