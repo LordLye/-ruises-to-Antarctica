@@ -87,8 +87,8 @@
       margin-top: -1px;
     }
 
-    &>span::before {
-      content: '';
+    & > span::before {
+      content: "";
       display: block;
       width: 18px;
       height: 18px;
@@ -105,24 +105,24 @@
       }
     }
 
-    &>input:checked+span::before {
-      background-image: url('../img/svg/check-mark.svg');
+    & > input:checked + span::before {
+      background-image: url("../img/svg/check-mark.svg");
     }
 
-    &>input:not(:disabled):not(:checked)+span:hover::before {
+    & > input:not(:disabled):not(:checked) + span:hover::before {
       opacity: 0.8;
     }
 
-    &>input:not(:disabled):active+span::before {
+    & > input:not(:disabled):active + span::before {
       opacity: 0.6;
     }
 
-    &>input:focus+span::before {
+    & > input:focus + span::before {
       box-shadow: 0 0 0 2px $color-dodger-blue;
       outline: none;
     }
 
-    &>input:disabled+span::before {
+    & > input:disabled + span::before {
       opacity: 0.3;
     }
   }

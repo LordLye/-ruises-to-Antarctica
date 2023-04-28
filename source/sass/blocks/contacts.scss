@@ -16,9 +16,9 @@
 }
 
 .contacts__map {
-  width: 48.277%;
+  width: 48.27%;
   min-height: 306px;
-  background-color: aqua;
+  background-color: $light-sky-blue;
 
   & :focus {
     box-shadow: 0 0 0 2px $color-dodger-blue;
@@ -38,7 +38,7 @@
 
 .contacts__info {
   padding-top: 80px;
-  width: 43.104%;
+  width: 43.1%;
 
   @include vp-1023 {
     width: auto;

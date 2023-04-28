@@ -1,22 +1,19 @@
 .booking {
-  background-color: $light-sky-blue;
-  background: url("../img/feedback-background-desktop.jpg") no-repeat;
+  background: url("../img/feedback-background-desktop.jpg") no-repeat, $light-sky-blue;
   background-size: cover;
   min-height: 555px;
-  padding: 50px 11.933% 37px 11.933%;
+  padding: 50px 11.93% 37px 11.93%;
   display: flex;
   justify-content: space-between;
   gap: 20px;
 
   @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
-    background-color: $light-sky-blue;
-    background: url("../img/feedback-background-desktop@2x.jpg") no-repeat;
+    background: url("../img/feedback-background-desktop@2x.jpg") no-repeat, $light-sky-blue;
     background-size: cover;
   }
 
   @include vp-1023 {
-    background-color: $light-sky-blue;
-    background: url("../img/feedback-background-tablet.jpg") no-repeat;
+    background: url("../img/feedback-background-tablet.jpg") no-repeat, $light-sky-blue;
     background-size: cover;
     flex-direction: column;
     align-items: center;
@@ -25,23 +22,20 @@
   }
 
   @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
-    background-color: $light-sky-blue;
-    background: url("../img/feedback-background-tablet@2x.jpg") no-repeat;
+    background: url("../img/feedback-background-tablet@2x.jpg") no-repeat, $light-sky-blue;
     background-size: cover;
   }
 
   @include vp-767 {
-    background-color: $light-sky-blue;
-    background: url("../img/feedback-background-mobile.jpg") no-repeat;
+    background: url("../img/feedback-background-mobile.jpg") no-repeat, $light-sky-blue;
     background-size: cover;
     padding: 60px 15px 65px 15px;
     gap: 35px;
   }
 
   @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
-    background-color: $light-sky-blue;
-    background: url("../img/feedback-background-mobile@2x.jpg") no-repeat;
-    background-size: cover
+    background: url("../img/feedback-background-mobile@2x.jpg") no-repeat, $light-sky-blue;
+    background-size: cover;
   }
 }
 

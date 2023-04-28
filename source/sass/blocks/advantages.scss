@@ -1,6 +1,6 @@
 .advantages {
   background-color: $light-sky-blue;
-  background-image: url('../img/advantages-background-desktop.jpg');
+  background-image: url("../img/advantages-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 562px;
@@ -108,7 +108,7 @@
 
     @include vp-1023 {
       font-size: 18px;
-      line-height: 25px
+      line-height: 25px;
     }
 
     @include vp-767 {
