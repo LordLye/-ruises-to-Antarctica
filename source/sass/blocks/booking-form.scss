@@ -1,6 +1,6 @@
 .booking-form {
   background: $color-tangaroa;
-  padding: 50px;
+  padding: 44px 50px 50px 50px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -12,8 +12,8 @@
   }
 
   @include vp-767 {
-   padding: 40px 30px 40px 30px;
-   width: 100%;
+    padding: 36px 30px 40px 30px;
+    width: 100%;
   }
 
   & p {
@@ -22,11 +22,12 @@
     font-size: 18px;
     line-height: 27px;
     color: $color-alice-blue;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
 
     @include vp-767 {
       text-align: center;
-     }
+      line-height: 25px;
+    }
   }
 
   & [data-on-input-validate] {
@@ -42,10 +43,13 @@
     height: 43px;
     width: 100%;
     padding: 11px 16px;
+    border: none;
+    font-size: 14px;
+    line-height: 21px;
 
     &:focus {
       box-shadow: 0 0 0 2px $color-dodger-blue;
-      outline:none;
+      outline: none;
     }
   }
 }
@@ -56,6 +60,10 @@
   align-items: center;
   margin-bottom: 10px;
 
+  @include vp-767 {
+    margin-bottom: 7px;
+  }
+
   & label span {
     font-size: 10px;
     line-height: 13px;
@@ -63,12 +71,21 @@
     display: flex;
     align-items: center;
     gap: 5px;
+
+    @include vp-767 {
+      line-height: 12px;
+      gap: 10px;
+    }
   }
 
   & label {
     display: flex;
     align-items: center;
     flex-direction: row;
+
+    @include vp-767 {
+      margin-top: -1px;
+    }
 
     &>span::before {
       content: '';
@@ -81,26 +98,31 @@
       margin: 0;
       background-repeat: no-repeat;
       background-position: center center;
+
+      @include vp-767 {
+        width: 20px;
+        height: 20px;
+      }
     }
 
-    & >input:checked+span::before {
+    &>input:checked+span::before {
       background-image: url('../img/svg/check-mark.svg');
     }
 
-    & >input:not(:disabled):not(:checked)+span:hover::before {
+    &>input:not(:disabled):not(:checked)+span:hover::before {
       opacity: 0.8;
     }
 
-    & >input:not(:disabled):active+span::before {
+    &>input:not(:disabled):active+span::before {
       opacity: 0.6;
     }
 
-    & >input:focus+span::before {
+    &>input:focus+span::before {
       box-shadow: 0 0 0 2px $color-dodger-blue;
       outline: none;
     }
 
-    & >input:disabled+span::before {
+    &>input:disabled+span::before {
       opacity: 0.3;
     }
   }
@@ -112,11 +134,19 @@
   font-size: 14px;
   line-height: 21px;
   color: $color-tangaroa;
-  padding: 14px;
+  padding: 10px 14px;
   border: none;
 
   &:focus {
     box-shadow: 0 0 0 2px $color-dodger-blue;
-    outline:none;
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

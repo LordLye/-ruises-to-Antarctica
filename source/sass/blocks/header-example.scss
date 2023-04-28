@@ -1,11 +1,15 @@
 .header-example {
   background-color: rgb(255, 255, 255, 0);
-  padding: 35px 0 35px 0;
+  padding: 40px 0 35px 0;
   z-index: 30;
   transition: transform 0.3s ease, background-color 0.3s ease;
 
+  @media (max-width: 1023px) {
+    padding: 26px 0 25px 3px;
+  }
+
   @media (max-width: 767px) {
-    padding: 25px 0 25px 0;
+    padding: 20px 0 25px 0;
   }
 
   &--sticky {
@@ -21,7 +25,6 @@
 
   .main-header__container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
 
@@ -31,7 +34,7 @@
 
     &:focus {
       box-shadow: 0 0 0 2px $color-dodger-blue;
-      outline:none;
+      outline: none;
     }
 
     &:hover {
@@ -42,11 +45,7 @@
       opacity: 0.6;
     }
 
-    @media (max-width: 1023px) {
-      margin: -5px 0 0 0;
-    }
-
-   @media (max-width: 767px) {
+    @media (max-width: 767px) {
       flex-direction: row;
       transform: scale(1);
     }
@@ -56,7 +55,8 @@
       z-index: 25;
       margin-left: 36px;
       stroke: $color-tangaroa;
-      color: $color-tangaroa;;
+      color: $color-tangaroa;
+      ;
     }
 
     & svg {
@@ -73,7 +73,7 @@
   }
 
   &__nav {
-   @media (max-width:  767px) {
+    @media (max-width: 767px) {
       background-color: $color-alice-blue;
       bottom: 0;
       display: flex;
@@ -81,7 +81,7 @@
       left: 36px;
       opacity: 0;
       margin: 0;
-      padding: 75px 30px 15px 20px;
+      padding: 75px 30px 15px 15px;
       position: fixed;
       pointer-events: none;
       top: 0;
@@ -109,10 +109,10 @@
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    max-width: 600px;
-    padding: 0;
+    max-width: 1050px;
+    padding: 0 0 0 10px;
 
-   @media (max-width: 1023px) {
+    @media (max-width: 1023px) {
       margin: 0;
     }
 
@@ -126,7 +126,7 @@
   }
 
   &__item {
-   @media (max-width: 767px) {
+    @media (max-width: 767px) {
       opacity: 0;
       transition: all ease-out 0.15s;
       transform: translateX(-15px);
@@ -137,15 +137,15 @@
     &:not(:last-child) {
       margin: 0 33px 0 0;
 
-     @media (max-width: 1023px) {
+      @media (max-width: 1023px) {
         margin: 0 23px 0 0;
       }
+    }
 
-      @media (max-width: 767px) {
-        display: flex;
-        align-items: center;
-        margin: 0;
-      }
+    @media (max-width: 767px) {
+      display: flex;
+      align-items: center;
+      margin: 0;
     }
   }
 
@@ -157,7 +157,7 @@
 
     &:focus {
       box-shadow: 0 0 0 2px $color-dodger-blue;
-      outline:none;
+      outline: none;
     }
 
     &:hover {
@@ -168,12 +168,12 @@
       opacity: 0.6;
     }
 
-    @media (max-width:  1023px) {
+    @media (max-width: 1023px) {
       font-size: 14px;
       line-height: 17px;
     }
 
-   @media (max-width:  767px) {
+    @media (max-width: 767px) {
       color: $color-main-text;
       font-size: 18px;
       line-height: 22px;
@@ -194,13 +194,13 @@
     position: relative;
     z-index: 25;
 
-   @media (max-width: 767px) {
+    @media (max-width: 767px) {
       display: flex;
       position: relative;
 
       &:focus {
         box-shadow: 0 0 0 2px $color-dodger-blue;
-        outline:none;
+        outline: none;
       }
 
       &:hover {
@@ -265,4 +265,8 @@
 
 .section-example {
   height: 100vh;
+}
+
+.header-example__nav {
+  margin-top: 1px;
 }

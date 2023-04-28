@@ -1316,7 +1316,7 @@ button,
 
 .header-example {
   background-color: rgba(255, 255, 255, 0);
-  padding: 35px 0 35px 0;
+  padding: 40px 0 35px 0;
   z-index: 30;
   -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
@@ -1342,9 +1342,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1403,8 +1400,8 @@ button,
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  max-width: 600px;
-  padding: 0;
+  max-width: 1050px;
+  padding: 0 0 0 10px;
 }
 
 .header-example__item:not(:last-child) {
@@ -1514,6 +1511,10 @@ button,
   height: 100vh;
 }
 
+.header-example__nav {
+  margin-top: 1px;
+}
+
 .main-footer {
   background-color: #011C40;
   padding: 50px 0 50px 0;
@@ -1529,9 +1530,6 @@ button,
   -ms-flex-direction: row;
   flex-direction: row;
   gap: 10px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .main-footer__logo {
@@ -1562,8 +1560,8 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 20px 33px;
-  margin: 13px auto 0 0;
+  gap: 20px 35px;
+  margin: 10px auto 0 0;
   padding: 0;
   max-width: 75%;
 }
@@ -1622,16 +1620,17 @@ button,
 .intro {
   position: relative;
   min-height: 650px;
-  margin-top: -108px;
-  background: url("../img/intro-background.jpg") no-repeat;
+  margin-top: -75px;
+  background-color: rgb(45, 142, 238);
+  background-image: url("../img/intro-background-desktop.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .intro__text-block {
-  padding: 283px 20px 20px 14.495%;
+  padding: 270px 20px 22px 14.495%;
 }
 
 .intro__text-block br {
@@ -1643,7 +1642,7 @@ button,
   font-size: 54px;
   line-height: 66px;
   color: #F9FBFD;
-  margin: 0 0 30px 0;
+  margin: 0 0 12px 0;
 }
 
 .intro__text-block p {
@@ -1671,9 +1670,9 @@ button,
 }
 
 .descript__text-block {
-  max-width: 512px;
+  max-width: 546px;
   margin-right: auto;
-  padding-top: 66px;
+  padding-top: 56px;
   padding-right: 30px;
 }
 
@@ -1681,7 +1680,7 @@ button,
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
-  margin: 0 0 40px 0;
+  margin: 0 0 24px 0;
 }
 
 .descript__text-block p {
@@ -1693,10 +1692,12 @@ button,
 }
 
 .advantages {
-  background: url("../img/advantages-background.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/advantages-background-desktop.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   min-height: 562px;
-  padding: 120px 103px 120px 103px;
+  padding: 110px 103px 120px 103px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1707,7 +1708,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 60px;
+  gap: 49px;
 }
 
 .advantages h2 {
@@ -1736,15 +1737,15 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 20px;
+  gap: 9px;
   background: #F9FBFD;
-  padding: 30px 20px 50px 30px;
+  padding: 30px 20px 44px 30px;
   max-width: 360px;
   min-width: 206px;
 }
 
 .advantages__item svg {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .advantages__item h3 {
@@ -1770,14 +1771,14 @@ button,
 }
 
 .cruises {
-  padding: 95px 15px 120px 15px;
+  padding: 86px 15px 120px 15px;
 }
 
 .cruises__title {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 48px auto;
   max-width: 800px;
   text-align: center;
 }
@@ -1815,6 +1816,11 @@ button,
   outline: none;
 }
 
+.cruises__item:hover .cruises-card__popup h3,
+.cruises__item:focus-within .cruises-card__popup h3 {
+  visibility: visible;
+}
+
 .cruises__item:hover,
 .cruises__item:focus-within {
   -webkit-box-shadow: 0 0 0 2px rgb(45, 142, 238);
@@ -1829,15 +1835,16 @@ button,
 
 .cruises-card {
   position: relative;
-  padding: 23px 30px 0 30px;
+  padding: 0px 30px 0 30px;
   min-height: 386px;
+  background-size: cover;
 }
 
 .cruises-card h3 {
   position: absolute;
   margin: 0;
   padding-right: 10px;
-  bottom: 20px;
+  bottom: 22px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1845,42 +1852,50 @@ button,
 }
 
 .cruises-card--astoria {
-  background: url("../img/cruise-astoria-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-astoria-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--elayn {
-  background: url("../img/cruise-astoria-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-astoria-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--atlantis {
-  background: url("../img/cruise-atlantis-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-atlantis-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--odissey {
-  background: url("../img/cruise-odissey-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-odissey-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--olimpia {
-  background: url("../img/cruise-olimpia-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-olimpia-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--avrora {
-  background: url("../img/cruise-avrora-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-avrora-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--leonor {
-  background: url("../img/cruise-leonor-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-leonor-desktop.jpg");
   background-size: cover;
 }
 
 .cruises-card--minion {
-  background: url("../img/cruise-minion-desktop.jpg") no-repeat;
+  background-color: #89caf5;
+  background-image: url("../img/cruise-minion-desktop.jpg");
   background-size: cover;
 }
 
@@ -1890,18 +1905,17 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-top: -23px;
   margin-left: -30px;
   width: calc(100% + 60px);
   min-height: 386px;
-  padding: 25px 25px;
+  padding: 30px 25px 35px 25px;
   background: #011C40;
-  height: calc(100% + 23px);
+  height: 100%;
 }
 
 .cruises-card__popup h3 {
   position: static;
-  margin: 0 0 18px 0;
+  margin: 0 0 13px 0;
   color: #F9FBFD;
   font-weight: 500;
   font-size: 18px;
@@ -1917,11 +1931,15 @@ button,
 }
 
 .cruises-card__popup p {
-  margin: 0 0 12px 0;
+  margin: 0 0 11px 0;
   color: #D8D8D9;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+.cruises-card__popup p:last-of-type {
+  margin-bottom: 5px;
 }
 
 .cruises-card__popup a {
@@ -1929,8 +1947,12 @@ button,
   font-size: 14px;
   line-height: 21px;
   background: #F9FBFD;
-  padding: 8px 15px;
-  margin: auto 0 0 0;
+  padding: 9px 15px;
+  margin: auto 0 10px 0;
+}
+
+.cruises-card__popup a:last-of-type {
+  margin-bottom: 0;
 }
 
 .cruises-card__popup a:focus {
@@ -1939,11 +1961,20 @@ button,
   outline: none;
 }
 
+.cruises-card__popup a:hover {
+  opacity: 0.8;
+}
+
+.cruises-card__popup a:active {
+  opacity: 0.6;
+}
+
 .booking {
+  background-color: #89caf5;
   background: url("../img/feedback-background-desktop.jpg") no-repeat;
   background-size: cover;
   min-height: 555px;
-  padding: 50px 11.933% 50px 11.933%;
+  padding: 50px 11.933% 37px 11.933%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1962,7 +1993,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 10px;
-  padding-top: 178px;
+  padding-top: 163px;
   width: 55%;
 }
 
@@ -1987,7 +2018,7 @@ button,
 
 .booking-form {
   background: #011C40;
-  padding: 50px;
+  padding: 44px 50px 50px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2004,7 +2035,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #F9FBFD;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 
 .booking-form [data-on-input-validate] {
@@ -2020,6 +2051,9 @@ button,
   height: 43px;
   width: 100%;
   padding: 11px 16px;
+  border: none;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .booking-form__input-wrapper input:focus {
@@ -2109,7 +2143,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   color: #011C40;
-  padding: 14px;
+  padding: 10px 14px;
   border: none;
 }
 
@@ -2117,6 +2151,14 @@ button,
   -webkit-box-shadow: 0 0 0 2px rgb(45, 142, 238);
   box-shadow: 0 0 0 2px rgb(45, 142, 238);
   outline: none;
+}
+
+.booking-form__button:hover {
+  opacity: 0.8;
+}
+
+.booking-form__button:active {
+  opacity: 0.6;
 }
 
 .input-message {
@@ -2140,7 +2182,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 10px;
-  padding: 120px 0;
+  padding: 115px 0 125px 0;
 }
 
 .contacts__map {
@@ -2168,16 +2210,13 @@ button,
 }
 
 .contacts__info p:last-of-type {
-  margin-bottom: 45px;
+  margin-bottom: 32px;
 }
 
 .contacts-info__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   gap: 10px;
 }
 
@@ -2204,6 +2243,19 @@ button,
   flex-shrink: 0;
 }
 
+.contacts-info__item p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contacts-info__item p:last-of-type {
+  margin-bottom: 0;
+}
+
+.contacts-info__item p br {
+  display: none;
+}
+
 .contacts-info__list {
   margin: 0;
   padding: 0;
@@ -2214,7 +2266,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
   list-style-type: none;
 }
 
@@ -2222,8 +2274,9 @@ button,
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 103px;
+  padding: 0 100px 0 103px;
   min-width: 320px;
+  position: absolute;
 }
 
 .container-max {
@@ -2273,47 +2326,54 @@ button,
 */
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 1.5dppx) {
-  .cruises-card--astoria {
-    background: url("../img/cruise-astoria-desktop@2x.jpg") no-repeat;
+  .intro {
+    background-color: rgb(45, 142, 238);
+    background-image: url("../img/intro-background-desktop@2x.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .advantages {
+    background-color: #89caf5;
+    background-image: url("../img/advantages-background-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cruises-card--astoria {
+    background-image: url("../img/cruise-astoria-desktop@2x.jpg");
   }
 
   .cruises-card--elayn {
-    background: url("../img/cruise-astoria-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-desktop@2x.jpg");
   }
 
   .cruises-card--atlantis {
-    background: url("../img/cruise-atlantis-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-atlantis-desktop@2x.jpg");
   }
 
   .cruises-card--odissey {
-    background: url("../img/cruise-odissey-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-odissey-desktop@2x.jpg");
   }
 
   .cruises-card--olimpia {
-    background: url("../img/cruise-olimpia-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-olimpia-desktop@2x.jpg");
   }
 
   .cruises-card--avrora {
-    background: url("../img/cruise-avrora-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-avrora-desktop@2x.jpg");
   }
 
   .cruises-card--leonor {
-    background: url("../img/cruise-leonor-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-leonor-desktop@2x.jpg");
   }
 
   .cruises-card--minion {
-    background: url("../img/cruise-minion-desktop@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-minion-desktop@2x.jpg");
   }
 
   .booking {
+    background-color: #89caf5;
     background: url("../img/feedback-background-desktop@2x.jpg") no-repeat;
     background-size: cover;
   }
@@ -2321,11 +2381,11 @@ button,
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 41px;
+    padding: 0 45px;
   }
 
-  .header-example__logo {
-    margin: -5px 0 0 0;
+  .header-example {
+    padding: 26px 0 25px 3px;
   }
 
   .header-example__logo svg {
@@ -2346,8 +2406,13 @@ button,
     line-height: 17px;
   }
 
+  .main-footer {
+    padding: 46px 0 52px 0;
+  }
+
   .main-footer__logo {
-    margin-right: 2.214%;
+    margin-right: 1.7%;
+    margin-top: 2px;
   }
 
   .main-footer__logo svg {
@@ -2373,7 +2438,7 @@ button,
 
   .social {
     gap: 22px;
-    margin-top: 2px;
+    margin-top: 6px;
   }
 
   .social__link svg {
@@ -2381,8 +2446,24 @@ button,
     height: 16px;
   }
 
+  .social__link svg {
+    width: auto;
+  }
+
+  .intro {
+    background-color: rgb(45, 142, 238);
+    background-image: url("../img/intro-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 638px;
+    -webkit-filter: none;
+    filter: none;
+    margin-top: -51px;
+  }
+
   .intro__text-block {
-    padding: 280px 45px 20px 45px;
+    padding: 268px 45px 20px 45px;
   }
 
   .intro__text-block h1 {
@@ -2397,10 +2478,11 @@ button,
   }
 
   .descript {
-    padding: 100px 0 100px 0;
+    padding: 91px 0 93px 0;
   }
 
   .descript img {
+    margin-top: 9px;
     width: 324px;
     height: 174px;
   }
@@ -2412,11 +2494,24 @@ button,
   .descript__text-block h2 {
     font-size: 26px;
     line-height: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
   }
 
   .advantages {
-    padding: 100px 45px 100px 45px;
+    background-color: #89caf5;
+    background-image: url("../img/advantages-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 45px 100px 45px;
+  }
+
+  .advantages h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .advantages__list {
+    gap: 30px;
   }
 
   .advantages__item svg {
@@ -2438,7 +2533,12 @@ button,
   }
 
   .advantages__item {
-    padding: 26px 10px 25px 20px;
+    padding: 26px 10px 18px 20px;
+    gap: 12px;
+  }
+
+  .advantages__item svg {
+    margin-bottom: 6px;
   }
 
   .advantages__item:nth-child(1n) svg {
@@ -2464,13 +2564,18 @@ button,
     height: 26px;
   }
 
+  .advantages__item:nth-child(3n) h3 {
+    margin-bottom: 10px;
+  }
+
   .cruises {
-    padding: 100px 19px 100px 19px;
+    padding: 90px 15px 100px 15px;
   }
 
   .cruises__title {
     font-size: 26px;
     line-height: 39px;
+    margin-bottom: 49px;
   }
 
   .cruises__list {
@@ -2482,44 +2587,40 @@ button,
     padding: 28px 35px 0 35px;
   }
 
+  .cruises-card h3 {
+    bottom: 27px;
+  }
+
   .cruises-card--astoria {
-    background: url("../img/cruise-astoria-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-tablet.jpg");
   }
 
   .cruises-card--elayn {
-    background: url("../img/cruise-astoria-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-tablet.jpg");
   }
 
   .cruises-card--atlantis {
-    background: url("../img/cruise-atlantis-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-atlantis-tablet.jpg");
   }
 
   .cruises-card--odissey {
-    background: url("../img/cruise-odissey-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-odissey-tablet.jpg");
   }
 
   .cruises-card--olimpia {
-    background: url("../img/cruise-olimpia-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-olimpia-tablet.jpg");
   }
 
   .cruises-card--avrora {
-    background: url("../img/cruise-avrora-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-avrora-tablet.jpg");
   }
 
   .cruises-card--leonor {
-    background: url("../img/cruise-leonor-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-leonor-tablet.jpg");
   }
 
   .cruises-card--minion {
-    background: url("../img/cruise-minion-tablet.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-minion-tablet.jpg");
   }
 
   .cruises-card__popup {
@@ -2527,9 +2628,11 @@ button,
     height: calc(100% + 28px);
     margin-left: -35px;
     margin-top: -28px;
+    padding: 30px 35px 35px 35px;
   }
 
   .booking {
+    background-color: #89caf5;
     background: url("../img/feedback-background-tablet.jpg") no-repeat;
     background-size: cover;
     -webkit-box-orient: vertical;
@@ -2539,8 +2642,8 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 100px 50px 100px 50px;
-    gap: 60px;
+    padding: 88px 50px 100px 50px;
+    gap: 52px;
   }
 
   .booking__text {
@@ -2550,6 +2653,7 @@ button,
     align-items: center;
     text-align: center;
     padding-top: 0;
+    gap: 5px;
   }
 
   .booking__text h2 {
@@ -2591,64 +2695,107 @@ button,
     width: auto;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
-    padding-top: 72px;
+    padding-top: 66px;
+  }
+
+  .contacts__info br {
+    display: none;
+  }
+
+  .contacts__info svg {
+    margin-top: 5px;
   }
 
   .contacts__info p:last-of-type {
-    margin-bottom: 40px;
+    margin-bottom: 27px;
+  }
+
+  .contacts-info__item p {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+  }
+
+  .contacts-info__item p br {
+    display: block;
+  }
+
+  .contacts-info__item {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+  }
+
+  .contacts-info__item br {
+    display: block;
+  }
+
+  .contacts-info__item p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .contacts-info__item svg {
+    margin-top: 3px;
   }
 
   .contacts-info__list {
-    gap: 30px;
+    gap: 21px;
   }
 
   .main-header__container {
-    padding: 0 41px;
+    padding: 0 44px;
   }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 1.5dppx) {
-  .cruises-card--astoria {
-    background: url("../img/cruise-astoria-tablet@2x.jpg") no-repeat;
+  .intro {
+    background-color: rgb(45, 142, 238);
+    background-image: url("../img/intro-background-tablet@2x.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .advantages {
+    background-color: #89caf5;
+    background-image: url("../img/advantages-background-tablet@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cruises-card--astoria {
+    background-image: url("../img/cruise-astoria-tablet@2x.jpg");
   }
 
   .cruises-card--elayn {
-    background: url("../img/cruise-astoria-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-tablet@2x.jpg");
   }
 
   .cruises-card--atlantis {
-    background: url("../img/cruise-atlantis-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-atlantis-tablet@2x.jpg");
   }
 
   .cruises-card--odissey {
-    background: url("../img/cruise-odissey-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-odissey-tablet@2x.jpg");
   }
 
   .cruises-card--olimpia {
-    background: url("../img/cruise-olimpia-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-olimpia-tablet@2x.jpg");
   }
 
   .cruises-card--avrora {
-    background: url("../img/cruise-avrora-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-avrora-tablet@2x.jpg");
   }
 
   .cruises-card--leonor {
-    background: url("../img/cruise-leonor-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-leonor-tablet@2x.jpg");
   }
 
   .cruises-card--minion {
-    background: url("../img/cruise-minion-tablet@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-minion-tablet@2x.jpg");
   }
 
   .booking {
+    background-color: #89caf5;
     background: url("../img/feedback-background-tablet@2x.jpg") no-repeat;
     background-size: cover;
   }
@@ -2673,7 +2820,7 @@ button,
   }
 
   .header-example {
-    padding: 25px 0 25px 0;
+    padding: 20px 0 25px 0;
   }
 
   .header-example__logo {
@@ -2704,7 +2851,7 @@ button,
     left: 36px;
     opacity: 0;
     margin: 0;
-    padding: 75px 30px 15px 20px;
+    padding: 75px 30px 15px 15px;
     position: fixed;
     pointer-events: none;
     top: 0;
@@ -2741,7 +2888,7 @@ button,
     padding-left: 10px;
   }
 
-  .header-example__item:not(:last-child) {
+  .header-example__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2787,10 +2934,14 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 30px;
+    gap: 27px;
     -webkit-box-align: self-start;
     -ms-flex-align: self-start;
     align-items: self-start;
+  }
+
+  .main-footer__logo {
+    margin-top: 0;
   }
 
   .main-footer__list {
@@ -2801,14 +2952,26 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 0;
+    gap: 17px;
   }
 
   .social {
-    margin-top: 0;
+    margin-top: 0px;
+  }
+
+  .intro {
+    background-color: rgb(45, 142, 238);
+    background-image: url("../img/intro-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    -webkit-filter: none;
+    filter: none;
+    margin-top: -45px;
   }
 
   .intro__text-block {
-    padding: 185px 15px 20px 15px;
+    padding: 176px 15px 20px 15px;
   }
 
   .intro__text-block br {
@@ -2826,7 +2989,7 @@ button,
   }
 
   .descript {
-    padding: 65px 0 85px 0;
+    padding: 56px 0 86px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2839,7 +3002,7 @@ button,
   }
 
   .descript__text-block {
-    margin: 0 0 50px 0;
+    margin: 0 0 34px 0;
     padding: 0;
   }
 
@@ -2849,7 +3012,17 @@ button,
   }
 
   .advantages {
-    padding: 65px 15px 65px 15px;
+    background-color: #89caf5;
+    background-image: url("../img/advantages-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 57px 15px 65px 15px;
+    gap: 30px;
+  }
+
+  .advantages h2 {
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .advantages__list {
@@ -2857,21 +3030,34 @@ button,
     grid-template-columns: auto;
   }
 
+  .advantages__item h3 {
+    max-width: 75%;
+  }
+
   .advantages__item {
-    padding: 25px 14px 25px 20px;
+    padding: 25px 14px 18px 20px;
   }
 
   .advantages__item:nth-child(2n) {
-    padding: 26px 22px 25px 20px;
+    padding: 26px 22px 18px 20px;
+  }
+
+  .advantages__item:nth-child(3n) {
+    padding: 26px 17px 18px 20px;
+  }
+
+  .advantages__item:nth-child(3n) h3 {
+    margin-bottom: 0;
   }
 
   .cruises {
-    padding: 65px 15px 65px 15px;
+    padding: 57px 10px 65px 10px;
   }
 
   .cruises__title {
     font-size: 24px;
     line-height: 36px;
+    margin-bottom: 30px;
   }
 
   .cruises__list {
@@ -2879,44 +3065,44 @@ button,
     grid-template-columns: repeat(1, minmax(250px, 380px));
   }
 
+  .cruises-card {
+    padding: 28px 25px 0 25px;
+  }
+
+  .cruises-card h3 {
+    bottom: 17px;
+  }
+
   .cruises-card--astoria {
-    background: url("../img/cruise-astoria-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-mobile.jpg");
   }
 
   .cruises-card--elayn {
-    background: url("../img/cruise-astoria-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-mobile.jpg");
   }
 
   .cruises-card--atlantis {
-    background: url("../img/cruise-atlantis-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-atlantis-mobile.jpg");
   }
 
   .cruises-card--odissey {
-    background: url("../img/cruise-odissey-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-odissey-mobile.jpg");
   }
 
   .cruises-card--olimpia {
-    background: url("../img/cruise-olimpia-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-olimpia-mobile.jpg");
   }
 
   .cruises-card--avrora {
-    background: url("../img/cruise-avrora-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-avrora-mobile.jpg");
   }
 
   .cruises-card--leonor {
-    background: url("../img/cruise-leonor-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-leonor-mobile.jpg");
   }
 
   .cruises-card--minion {
-    background: url("../img/cruise-minion-mobile.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-minion-mobile.jpg");
   }
 
   .cruises-card__popup {
@@ -2924,14 +3110,17 @@ button,
   }
 
   .booking {
+    background-color: #89caf5;
     background: url("../img/feedback-background-mobile.jpg") no-repeat;
     background-size: cover;
-    padding: 65px 15px;
-    gap: 40px;
+    padding: 60px 15px 65px 15px;
+    gap: 35px;
   }
 
   .booking__text {
     width: 89%;
+    line-height: 22px;
+    gap: 12px;
   }
 
   .booking__text h2 {
@@ -2946,16 +3135,35 @@ button,
   }
 
   .booking-form {
-    padding: 40px 30px 40px 30px;
+    padding: 36px 30px 40px 30px;
     width: 100%;
   }
 
   .booking-form p {
     text-align: center;
+    line-height: 25px;
+  }
+
+  .booking-form__checkbox {
+    margin-bottom: 7px;
+  }
+
+  .booking-form__checkbox label span {
+    line-height: 12px;
+    gap: 10px;
+  }
+
+  .booking-form__checkbox label {
+    margin-top: -1px;
+  }
+
+  .booking-form__checkbox label > span::before {
+    width: 20px;
+    height: 20px;
   }
 
   .contacts {
-    padding: 65px 0;
+    padding: 58px 0 52px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
@@ -3039,47 +3247,54 @@ button,
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 1.5dppx) {
-  .cruises-card--astoria {
-    background: url("../img/cruise-astoria-mobile@2x.jpg") no-repeat;
+  .intro {
+    background-color: rgb(45, 142, 238);
+    background-image: url("../img/intro-background-mobile@2x.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .advantages {
+    background-color: #89caf5;
+    background-image: url("../img/advantages-background-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .cruises-card--astoria {
+    background-image: url("../img/cruise-astoria-mobile@2x.jpg");
   }
 
   .cruises-card--elayn {
-    background: url("../img/cruise-astoria-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-astoria-mobile@2x.jpg");
   }
 
   .cruises-card--atlantis {
-    background: url("../img/cruise-atlantis-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-atlantis-mobile@2x.jpg");
   }
 
   .cruises-card--odissey {
-    background: url("../img/cruise-odissey-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-odissey-mobile@2x.jpg");
   }
 
   .cruises-card--olimpia {
-    background: url("../img/cruise-olimpia-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-olimpia-mobile@2x.jpg");
   }
 
   .cruises-card--avrora {
-    background: url("../img/cruise-avrora-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-avrora-mobile@2x.jpg");
   }
 
   .cruises-card--leonor {
-    background: url("../img/cruise-leonor-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-leonor-mobile@2x.jpg");
   }
 
   .cruises-card--minion {
-    background: url("../img/cruise-minion-mobile@2x.jpg") no-repeat;
-    background-size: cover;
+    background-image: url("../img/cruise-minion-mobile@2x.jpg");
   }
 
   .booking {
+    background-color: #89caf5;
     background: url("../img/feedback-background-mobile@2x.jpg") no-repeat;
     background-size: cover;
   }
@@ -3092,18 +3307,5 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
-  .intro {
-    background: url("../img/intro-background@2x.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .advantages {
-    background: url("../img/advantages-background@2x.jpg") no-repeat;
-    background-size: cover;
   }
 }

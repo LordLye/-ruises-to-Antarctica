@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  padding: 120px 0;
+  padding: 115px 0 125px 0;
 
   @include vp-1023 {
     padding: 100px 0;
@@ -10,7 +10,7 @@
   }
 
   @include vp-767 {
-    padding: 65px 0;
+    padding: 58px 0 52px 0;
     flex-direction: column-reverse;
   }
 }
@@ -22,7 +22,7 @@
 
   & :focus {
     box-shadow: 0 0 0 2px $color-dodger-blue;
-    outline:none;
+    outline: none;
   }
 
   @include vp-1023 {
@@ -43,7 +43,15 @@
   @include vp-1023 {
     width: auto;
     flex-basis: 50%;
-    padding-top: 72px;
+    padding-top: 66px;
+
+    & br {
+      display: none;
+    }
+
+    & svg {
+      margin-top: 5px;
+    }
   }
 
   @include vp-767 {
@@ -57,10 +65,10 @@
     margin: 0 0 10px 0;
 
     &:last-of-type {
-      margin-bottom: 45px;
+      margin-bottom: 32px;
 
       @include vp-1023 {
-        margin-bottom: 40px;
+        margin-bottom: 27px;
       }
     }
   }

@@ -1,24 +1,51 @@
 .advantages {
-  background: url('../img/advantages-background.jpg') no-repeat;
+  background-color: $light-sky-blue;
+  background-image: url('../img/advantages-background-desktop.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
   min-height: 562px;
-  padding: 120px 103px 120px 103px;
+  padding: 110px 103px 120px 103px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 60px;
+  gap: 49px;
 
-  @media (min-resolution: $retina-dppx) {
-    background: url("../img/advantages-background@2x.jpg") no-repeat;
-  background-size: cover;
+  @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background-color: $light-sky-blue;
+    background-image: url("../img/advantages-background-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   @include vp-1023 {
-    padding: 100px 45px 100px 45px;
+    background-color: $light-sky-blue;
+    background-image: url("../img/advantages-background-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 45px 100px 45px;
+  }
+
+  @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
+    background-color: $light-sky-blue;
+    background-image: url("../img/advantages-background-tablet@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   @include vp-767 {
-    padding: 65px 15px 65px 15px;
+    background-color: $light-sky-blue;
+    background-image: url("../img/advantages-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 57px 15px 65px 15px;
+    gap: 30px;
+  }
+
+  @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
+    background-color: $light-sky-blue;
+    background-image: url("../img/advantages-background-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   & h2 {
@@ -26,6 +53,16 @@
     font-size: 28px;
     line-height: 42px;
     margin: 0;
+
+    @include vp-1023 {
+      font-size: 26px;
+      line-height: 39px;
+    }
+
+    @include vp-767 {
+      font-size: 24px;
+      line-height: 36px;
+    }
   }
 }
 
@@ -37,6 +74,10 @@
   margin: 0;
   gap: 40px;
 
+  @include vp-1023 {
+    gap: 30px;
+  }
+
   @include vp-767 {
     grid-template-columns: auto;
   }
@@ -45,14 +86,14 @@
 .advantages__item {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 9px;
   background: $color-alice-blue;
-  padding: 30px 20px 50px 30px;
+  padding: 30px 20px 44px 30px;
   max-width: 360px;
   min-width: 206px;
 
   & svg {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 
     @include vp-1023 {
       margin-bottom: 4px;
@@ -68,6 +109,10 @@
     @include vp-1023 {
       font-size: 18px;
       line-height: 25px
+    }
+
+    @include vp-767 {
+      max-width: 75%;
     }
   }
 
@@ -96,7 +141,12 @@
   }
 
   @include vp-1023 {
-    padding: 26px 10px 25px 20px;
+    padding: 26px 10px 18px 20px;
+    gap: 12px;
+
+    & svg {
+      margin-bottom: 6px;
+    }
 
     &:nth-child(1n) {
       & svg {
@@ -121,14 +171,26 @@
         width: 36px;
         height: 26px;
       }
+
+      & h3 {
+        margin-bottom: 10px;
+      }
     }
   }
 
   @include vp-767 {
-    padding: 25px 14px 25px 20px;
+    padding: 25px 14px 18px 20px;
 
     &:nth-child(2n) {
-      padding: 26px 22px 25px 20px;
+      padding: 26px 22px 18px 20px;
+    }
+
+    &:nth-child(3n) {
+      padding: 26px 17px 18px 20px;
+
+      & h3 {
+        margin-bottom: 0;
+      }
     }
   }
 }

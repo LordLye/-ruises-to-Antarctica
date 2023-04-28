@@ -1,6 +1,5 @@
 .contacts-info__item {
   display: flex;
-  align-items: center;
   gap: 10px;
 
   & a {
@@ -8,7 +7,7 @@
 
     &:focus {
       box-shadow: 0 0 0 2px $color-dodger-blue;
-      outline:none;
+      outline: none;
     }
 
     &:hover {
@@ -23,6 +22,43 @@
   & svg {
     flex-shrink: 0;
   }
+
+  & p {
+    font-size: 16px;
+    line-height: 24px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    & br {
+      display: none;
+    }
+
+    @include vp-1023 {
+      align-items: start;
+
+      & br {
+        display: block;
+      }
+    }
+  }
+
+  @include vp-1023 {
+    align-items: start;
+
+    & br {
+      display: block;
+    }
+
+    & p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    & svg {
+      margin-top: 3px;
+    }
+  }
 }
 
 .contacts-info__list {
@@ -30,10 +66,10 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
   list-style-type: none;
 
   @include vp-1023 {
-    gap: 30px;
+    gap: 21px;
   }
 }

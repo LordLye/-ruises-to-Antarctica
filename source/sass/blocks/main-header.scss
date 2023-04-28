@@ -1,12 +1,13 @@
 .main-header__container {
-width: 100%;
+  width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 103px;
+  padding: 0 100px 0 103px;
   min-width: 320px;
+  position: absolute;
 
   @include vp-1023 {
-    padding: 0 41px;
+    padding: 0 44px;
   }
 
   @include vp-767 {
