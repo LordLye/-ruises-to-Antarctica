@@ -10,6 +10,42 @@
 
   @media (max-width: 767px) {
     padding: 20px 0 25px 0;
+
+    &--no-js {
+
+      & .main-header__container {
+        position: relative;
+        padding: 0;
+      }
+
+      & .header-example__nav {
+        visibility: visible;
+        width: 100%;
+        display: block;
+        opacity: 1;
+        pointer-events: all;
+        bottom: auto;
+        left: 0;
+        position: relative;
+      }
+
+      & .header-example__item {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      & .header-example__burger {
+        display: none;
+      }
+
+      & .header-example__logo {
+        position: absolute;
+        z-index: 25;
+        margin-left: 36px;
+        stroke: #011c40;
+        color: #011c40;
+      }
+    }
   }
 
   &--sticky {
@@ -132,7 +168,7 @@
       transition: all ease-out 0.15s;
       transform: translateX(-15px);
       min-height: 40px;
-      padding-left: 10px;
+      padding-left: 0;
     }
 
     &:not(:last-child) {
