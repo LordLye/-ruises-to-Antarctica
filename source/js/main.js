@@ -7,6 +7,8 @@ import {StickyHeader} from './modules/header/sticky-header';
 import {initLocomotiveScroll} from './modules/header/init-locomotive-scroll';
 import './modules/map';
 import {disableFocus} from './modules/no-focus';
+import './modules/header/no-js';
+
 
 // ---------------------------------
 
