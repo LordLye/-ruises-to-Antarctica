@@ -14,14 +14,19 @@
   }
 
   & img {
+    max-width: 560px;
+    width: 560px;
+
     @include vp-1023 {
       margin-top: 9px;
       width: 324px;
+      max-width: 324px;
       height: 174px;
     }
 
     @include vp-767 {
       width: 290px;
+      max-width: 324px;
       height: 155px;
     }
   }

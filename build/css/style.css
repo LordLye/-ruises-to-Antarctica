@@ -1659,6 +1659,11 @@ button,
   align-items: flex-start;
 }
 
+.descript img {
+  max-width: 560px;
+  width: 560px;
+}
+
 .descript__text-block {
   max-width: 546px;
   margin-right: auto;
@@ -2420,6 +2425,7 @@ button,
   .descript img {
     margin-top: 9px;
     width: 324px;
+    max-width: 324px;
     height: 174px;
   }
 
@@ -2898,6 +2904,7 @@ button,
 
   .descript img {
     width: 290px;
+    max-width: 324px;
     height: 155px;
   }
 
