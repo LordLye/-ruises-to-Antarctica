@@ -1,22 +1,16 @@
 .cruises-card {
   position: relative;
-  padding: 0 30px 0 30px;
   min-height: 386px;
   background-size: cover;
-
-  @include vp-1023 {
-    padding: 28px 35px 0 35px;
-  }
-
-  @include vp-767 {
-    padding: 28px 25px 0 25px;
-  }
+  width: 100%;
+  height: 100%;
 
   & h3 {
     position: absolute;
     margin: 0;
     padding-right: 10px;
     bottom: 22px;
+    left: 30px;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
@@ -24,243 +18,36 @@
 
     @include vp-1023 {
       bottom: 27px;
+      left: 35px;
     }
 
     @include vp-767 {
       bottom: 17px;
+      left: 25px;
     }
   }
+}
 
-  &--astoria {
-    background-color: $light-sky-blue;
-    background-image: url("../img/cruise-astoria-desktop.jpg");
-    background-size: cover;
-
-    @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-astoria-desktop@2x.jpg");
-    }
-
-    @include vp-1023 {
-      background-image: url("../img/cruise-astoria-tablet.jpg");
-    }
-
-    @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-astoria-tablet@2x.jpg");
-    }
-
-    @include vp-767 {
-      background-image: url("../img/cruise-astoria-mobile.jpg");
-    }
-
-    @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-astoria-mobile@2x.jpg");
-    }
-  }
-
-  &--elayn {
-    background-color: $light-sky-blue;
-    background-image: url("../img/cruise-astoria-desktop.jpg");
-    background-size: cover;
-
-    @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-astoria-desktop@2x.jpg");
-    }
-
-    @include vp-1023 {
-      background-image: url("../img/cruise-astoria-tablet.jpg");
-    }
-
-    @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-astoria-tablet@2x.jpg");
-    }
-
-    @include vp-767 {
-      background-image: url("../img/cruise-astoria-mobile.jpg");
-    }
-
-    @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-astoria-mobile@2x.jpg");
-    }
-  }
-
-  &--atlantis {
-    background-color: $light-sky-blue;
-    background-image: url("../img/cruise-atlantis-desktop.jpg");
-    background-size: cover;
-
-    @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-atlantis-desktop@2x.jpg");
-    }
-
-    @include vp-1023 {
-      background-image: url("../img/cruise-atlantis-tablet.jpg");
-    }
-
-    @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-atlantis-tablet@2x.jpg");
-    }
-
-    @include vp-767 {
-      background-image: url("../img/cruise-atlantis-mobile.jpg");
-    }
-
-    @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-atlantis-mobile@2x.jpg");
-    }
-  }
-
-
-  &--odissey {
-    background-color: $light-sky-blue;
-    background-image: url("../img/cruise-odissey-desktop.jpg");
-    background-size: cover;
-
-    @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-odissey-desktop@2x.jpg");
-    }
-
-    @include vp-1023 {
-      background-image: url("../img/cruise-odissey-tablet.jpg");
-    }
-
-    @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-odissey-tablet@2x.jpg");
-    }
-
-    @include vp-767 {
-      background-image: url("../img/cruise-odissey-mobile.jpg");
-    }
-
-    @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-odissey-mobile@2x.jpg");
-    }
-  }
-
-  &--olimpia {
-    background-color: $light-sky-blue;
-    background-image: url("../img/cruise-olimpia-desktop.jpg");
-    background-size: cover;
-
-    @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-olimpia-desktop@2x.jpg");
-    }
-
-    @include vp-1023 {
-      background-image: url("../img/cruise-olimpia-tablet.jpg");
-    }
-
-    @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-olimpia-tablet@2x.jpg");
-    }
-
-    @include vp-767 {
-      background-image: url("../img/cruise-olimpia-mobile.jpg");
-    }
-
-    @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-olimpia-mobile@2x.jpg");
-    }
-  }
-
-  &--avrora {
-    background-color: $light-sky-blue;
-    background-image: url("../img/cruise-avrora-desktop.jpg");
-    background-size: cover;
-
-    @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-avrora-desktop@2x.jpg");
-    }
-
-    @include vp-1023 {
-      background-image: url("../img/cruise-avrora-tablet.jpg");
-    }
-
-    @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-avrora-tablet@2x.jpg");
-    }
-
-    @include vp-767 {
-      background-image: url("../img/cruise-avrora-mobile.jpg");
-    }
-
-    @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-avrora-mobile@2x.jpg");
-    }
-  }
-
-  &--leonor {
-    background-color: $light-sky-blue;
-    background-image: url("../img/cruise-leonor-desktop.jpg");
-    background-size: cover;
-
-    @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-leonor-desktop@2x.jpg");
-    }
-
-    @include vp-1023 {
-      background-image: url("../img/cruise-leonor-tablet.jpg");
-    }
-
-    @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-leonor-tablet@2x.jpg");
-    }
-
-    @include vp-767 {
-      background-image: url("../img/cruise-leonor-mobile.jpg");
-    }
-
-    @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-leonor-mobile@2x.jpg");
-    }
-  }
-
-  &--minion {
-    background-color: $light-sky-blue;
-    background-image: url("../img/cruise-minion-desktop.jpg");
-    background-size: cover;
-
-    @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-minion-desktop@2x.jpg");
-    }
-
-    @include vp-1023 {
-      background-image: url("../img/cruise-minion-tablet.jpg");
-    }
-
-    @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-minion-tablet@2x.jpg");
-    }
-
-    @include vp-767 {
-      background-image: url("../img/cruise-minion-mobile.jpg");
-    }
-
-    @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
-      background-image: url("../img/cruise-minion-mobile@2x.jpg");
-    }
-  }
+.cruises-card__image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .cruises-card__popup {
   visibility: hidden;
   flex-direction: column;
-  margin-left: -30px;
-  width: calc(100% + 60px);
+  width: 100%;
   min-height: 386px;
   padding: 30px 25px 35px 25px;
   background: $color-tangaroa;
   height: 100%;
 
   @include vp-1023 {
-    width: calc(100% + 70px);
     height: calc(100% + 28px);
-    margin-left: -35px;
     margin-top: -28px;
     padding: 30px 35px 35px 35px;
-  }
-
-  @include vp-767 {
-    width: calc(100% + 70px);
   }
 
   & h3 {
