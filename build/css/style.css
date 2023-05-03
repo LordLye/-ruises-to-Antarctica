@@ -2075,20 +2075,6 @@ button,
   background-position: center center;
 }
 
-.booking-form__checkbox label input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  border: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-}
-
 .booking-form__checkbox label > input:checked + span::before {
   background-image: url("../img/svg/check-mark.svg");
 }
@@ -2109,6 +2095,20 @@ button,
 
 .booking-form__checkbox label > input:disabled + span::before {
   opacity: 0.3;
+}
+
+.booking-form__checkbox input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
 }
 
 .booking-form__button {

@@ -2,4 +2,3 @@ build/*.js
 source/js/vendor/*.js
 gulpfile.js
 webpack.config.cjs
-locomotive-scroll.js
