@@ -2694,6 +2694,13 @@ button,
     padding: 20px 0 25px 0;
   }
 
+  .header-example.is-open .main-header__main-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 43, 102, 0.5);
+  }
+
   .header-example--no-js .main-header__container {
     position: relative;
     padding: 0;
