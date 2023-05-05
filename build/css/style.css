@@ -2156,7 +2156,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 10px;
-  padding: 115px 0 125px 0;
+  padding: 115px 0 95px 0;
 }
 
 .contacts__map {
@@ -2975,6 +2975,12 @@ button,
   .cruises-card h3 {
     bottom: 17px;
     left: 25px;
+  }
+
+  .cruises-card__popup {
+    height: 100%;
+    margin-top: 0;
+    padding: 30px 25px 35px;
   }
 
   .booking {
