@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  padding: 115px 0 125px 0;
+  padding: 115px 0 95px 0;
 
   @include vp-1023 {
     padding: 100px 0;
@@ -17,7 +17,6 @@
 
 .contacts__map {
   width: 48.27%;
-  min-height: 306px;
   background-color: $light-sky-blue;
 
   & :focus {
@@ -39,6 +38,7 @@
 .contacts__info {
   padding-top: 80px;
   width: 43.1%;
+  margin-bottom: 72px;
 
   @include vp-1023 {
     width: auto;

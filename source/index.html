@@ -16,39 +16,41 @@
 <body>
   <div class="wrapper">
     <header class="main-header header-example header-example--no-js" data-header>
-      <div class="main-header__container">
-        <a class="header-example__logo" href="index.html">
-          <svg width="70" height="38" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#logo"></use>
-          </svg>
-        </a>
-        <nav class="header-example__nav">
-          <span class="visually-hidden">Меню навигации.</span>
-          <ul class="header-example__list">
-            <li class="header-example__item">
-              <a href="#advantages" class="header-example__link" tabindex="0">Преимущества</a>
-            </li>
-            <li class="header-example__item">
-              <a href="#" class="header-example__link" tabindex="0">Направления</a>
-            </li>
-            <li class="header-example__item">
-              <a href="#cruises" class="header-example__link" tabindex="0">Ближайшие круизы</a>
-            </li>
-            <li class="header-example__item">
-              <a href="#contacts" class="header-example__link" tabindex="0">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="header-example__burger" type="button" data-burger>
-          <span class="visually-hidden">Кнопка меню.</span>
-          <svg class="header-example__burger-text" width="24" height="12" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#burger-menu"></use>
-          </svg>
-          <svg class="header-example__burger-icon" width="13" height="13" xmlns="http://www.w3.org/2000/svg"
-            data-close-menu>
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
+      <div class="main-header__main-background" data-close-menu>
+        <div class="main-header__container">
+          <a class="header-example__logo" href="index.html">
+            <svg width="70" height="38" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="header-example__nav">
+            <span class="visually-hidden">Меню навигации.</span>
+            <ul class="header-example__list">
+              <li class="header-example__item">
+                <a href="#advantages" class="header-example__link" tabindex="0" data-close-menu>Преимущества</a>
+              </li>
+              <li class="header-example__item">
+                <a href="#" class="header-example__link" tabindex="0" data-close-menu>Направления</a>
+              </li>
+              <li class="header-example__item">
+                <a href="#cruises" class="header-example__link" tabindex="0" data-close-menu>Ближайшие круизы</a>
+              </li>
+              <li class="header-example__item">
+                <a href="#contacts" class="header-example__link" tabindex="0" data-close-menu>Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header-example__burger" type="button" data-burger>
+            <span class="visually-hidden">Кнопка меню.</span>
+            <svg class="header-example__burger-text" width="24" height="12" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#burger-menu"></use>
+            </svg>
+            <svg class="header-example__burger-icon" width="13" height="13" xmlns="http://www.w3.org/2000/svg"
+              data-close-menu>
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -116,20 +118,24 @@
             <li class="cruises__item cruises-card" tabindex="0">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/cruise-astoria-mobile.webp 1x, img/cruise-astoria-mobile@2x.webp 2x" width="270" height="386">
+                  srcset="img/cruise-astoria-mobile.webp 1x, img/cruise-astoria-mobile@2x.webp 2x" width="270"
+                  height="386">
                 <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/cruise-astoria-tablet.webp 1x, img/cruise-astoria-tablet@2x.webp 2x" width="309" height="386">
+                  srcset="img/cruise-astoria-tablet.webp 1x, img/cruise-astoria-tablet@2x.webp 2x" width="309"
+                  height="386">
                 <source type="image/webp"
                   srcset="img/cruise-astoria-desktop.webp 1x, img/cruise-astoria-desktop@2x.webp 2x" width="260"
                   height="386">
 
                 <source media="(max-width: 767px)"
-                  srcset="img/cruise-astoria-mobile.jpg 1x, img/cruise-astoria-mobile@2x.jpg 2x" width="270" height="386">
+                  srcset="img/cruise-astoria-mobile.jpg 1x, img/cruise-astoria-mobile@2x.jpg 2x" width="270"
+                  height="386">
                 <source media="(max-width: 1023px)"
-                  srcset="img/cruise-astoria-tablet.jpg 1x, img/cruise-astoria-tablet@2x.jpg 2x" width="309" height="386">
+                  srcset="img/cruise-astoria-tablet.jpg 1x, img/cruise-astoria-tablet@2x.jpg 2x" width="309"
+                  height="386">
                 <img class="cruises-card__image" src="img/cruise-astoria-desktop.jpg"
-                  srcset="img/cruise-astoria-desktop@2x.jpg 2x" width="260" height="386"
-                  alt="Льды антарктики" loading="lazy">
+                  srcset="img/cruise-astoria-desktop@2x.jpg 2x" width="260" height="386" alt="Льды антарктики"
+                  loading="lazy">
               </picture>
               <h3>Круиз “Астория”</h3>
               <div class="cruises-card__popup">
@@ -151,17 +157,16 @@
                   srcset="img/cruise-elayn-mobile.webp 1x, img/cruise-elayn-mobile@2x.webp 2x" width="270" height="386">
                 <source type="image/webp" media="(max-width: 1023px)"
                   srcset="img/cruise-elayn-tablet.webp 1x, img/cruise-elayn-tablet@2x.webp 2x" width="309" height="386">
-                <source type="image/webp"
-                  srcset="img/cruise-elayn-desktop.webp 1x, img/cruise-elayn-desktop@2x.webp 2x" width="260"
-                  height="386">
+                <source type="image/webp" srcset="img/cruise-elayn-desktop.webp 1x, img/cruise-elayn-desktop@2x.webp 2x"
+                  width="260" height="386">
 
                 <source media="(max-width: 767px)"
                   srcset="img/cruise-elayn-mobile.jpg 1x, img/cruise-elayn-mobile@2x.jpg 2x" width="270" height="386">
                 <source media="(max-width: 1023px)"
                   srcset="img/cruise-elayn-tablet.jpg 1x, img/cruise-elayn-tablet@2x.jpg 2x" width="309" height="386">
                 <img class="cruises-card__image" src="img/cruise-elayn-desktop.jpg"
-                  srcset="img/cruise-elayn-desktop@2x.jpg 2x" width="260" height="386"
-                  alt="Льды антарктики" loading="lazy">
+                  srcset="img/cruise-elayn-desktop@2x.jpg 2x" width="260" height="386" alt="Льды антарктики"
+                  loading="lazy">
               </picture>
               <h3>Круиз “Элайн”</h3>
               <div class="cruises-card__popup">
@@ -180,20 +185,24 @@
             <li class="cruises__item cruises-card" tabindex="0">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/cruise-atlantis-mobile.webp 1x, img/cruise-atlantis-mobile@2x.webp 2x" width="270" height="386">
+                  srcset="img/cruise-atlantis-mobile.webp 1x, img/cruise-atlantis-mobile@2x.webp 2x" width="270"
+                  height="386">
                 <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/cruise-atlantis-tablet.webp 1x, img/cruise-atlantis-tablet@2x.webp 2x" width="309" height="386">
+                  srcset="img/cruise-atlantis-tablet.webp 1x, img/cruise-atlantis-tablet@2x.webp 2x" width="309"
+                  height="386">
                 <source type="image/webp"
                   srcset="img/cruise-atlantis-desktop.webp 1x, img/cruise-atlantis-desktop@2x.webp 2x" width="260"
                   height="386">
 
                 <source media="(max-width: 767px)"
-                  srcset="img/cruise-atlantis-mobile.jpg 1x, img/cruise-atlantis-mobile@2x.jpg 2x" width="270" height="386">
+                  srcset="img/cruise-atlantis-mobile.jpg 1x, img/cruise-atlantis-mobile@2x.jpg 2x" width="270"
+                  height="386">
                 <source media="(max-width: 1023px)"
-                  srcset="img/cruise-atlantis-tablet.jpg 1x, img/cruise-atlantis-tablet@2x.jpg 2x" width="309" height="386">
+                  srcset="img/cruise-atlantis-tablet.jpg 1x, img/cruise-atlantis-tablet@2x.jpg 2x" width="309"
+                  height="386">
                 <img class="cruises-card__image" src="img/cruise-atlantis-desktop.jpg"
-                  srcset="img/cruise-atlantis-desktop@2x.jpg 2x" width="260" height="386"
-                  alt="Льды антарктики" loading="lazy">
+                  srcset="img/cruise-atlantis-desktop@2x.jpg 2x" width="260" height="386" alt="Льды антарктики"
+                  loading="lazy">
               </picture>
               <h3>Круиз “Атлантис”</h3>
               <div class="cruises-card__popup">
@@ -212,20 +221,24 @@
             <li class="cruises__item cruises-card" tabindex="0">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/cruise-odissey-mobile.webp 1x, img/cruise-odissey-mobile@2x.webp 2x" width="270" height="386">
+                  srcset="img/cruise-odissey-mobile.webp 1x, img/cruise-odissey-mobile@2x.webp 2x" width="270"
+                  height="386">
                 <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/cruise-odissey-tablet.webp 1x, img/cruise-odissey-tablet@2x.webp 2x" width="309" height="386">
+                  srcset="img/cruise-odissey-tablet.webp 1x, img/cruise-odissey-tablet@2x.webp 2x" width="309"
+                  height="386">
                 <source type="image/webp"
                   srcset="img/cruise-odissey-desktop.webp 1x, img/cruise-odissey-desktop@2x.webp 2x" width="260"
                   height="386">
 
                 <source media="(max-width: 767px)"
-                  srcset="img/cruise-odissey-mobile.jpg 1x, img/cruise-odissey-mobile@2x.jpg 2x" width="270" height="386">
+                  srcset="img/cruise-odissey-mobile.jpg 1x, img/cruise-odissey-mobile@2x.jpg 2x" width="270"
+                  height="386">
                 <source media="(max-width: 1023px)"
-                  srcset="img/cruise-odissey-tablet.jpg 1x, img/cruise-odissey-tablet@2x.jpg 2x" width="309" height="386">
+                  srcset="img/cruise-odissey-tablet.jpg 1x, img/cruise-odissey-tablet@2x.jpg 2x" width="309"
+                  height="386">
                 <img class="cruises-card__image" src="img/cruise-odissey-desktop.jpg"
-                  srcset="img/cruise-odissey-desktop@2x.jpg 2x" width="260" height="386"
-                  alt="Льды антарктики" loading="lazy">
+                  srcset="img/cruise-odissey-desktop@2x.jpg 2x" width="260" height="386" alt="Льды антарктики"
+                  loading="lazy">
               </picture>
               <h3>Круиз “Одиссей”</h3>
               <div class="cruises-card__popup">
@@ -244,20 +257,24 @@
             <li class="cruises__item cruises-card" tabindex="0">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/cruise-olimpia-mobile.webp 1x, img/cruise-olimpia-mobile@2x.webp 2x" width="270" height="386">
+                  srcset="img/cruise-olimpia-mobile.webp 1x, img/cruise-olimpia-mobile@2x.webp 2x" width="270"
+                  height="386">
                 <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/cruise-olimpia-tablet.webp 1x, img/cruise-olimpia-tablet@2x.webp 2x" width="309" height="386">
+                  srcset="img/cruise-olimpia-tablet.webp 1x, img/cruise-olimpia-tablet@2x.webp 2x" width="309"
+                  height="386">
                 <source type="image/webp"
                   srcset="img/cruise-olimpia-desktop.webp 1x, img/cruise-olimpia-desktop@2x.webp 2x" width="260"
                   height="386">
 
                 <source media="(max-width: 767px)"
-                  srcset="img/cruise-olimpia-mobile.jpg 1x, img/cruise-olimpia-mobile@2x.jpg 2x" width="270" height="386">
+                  srcset="img/cruise-olimpia-mobile.jpg 1x, img/cruise-olimpia-mobile@2x.jpg 2x" width="270"
+                  height="386">
                 <source media="(max-width: 1023px)"
-                  srcset="img/cruise-olimpia-tablet.jpg 1x, img/cruise-olimpia-tablet@2x.jpg 2x" width="309" height="386">
+                  srcset="img/cruise-olimpia-tablet.jpg 1x, img/cruise-olimpia-tablet@2x.jpg 2x" width="309"
+                  height="386">
                 <img class="cruises-card__image" src="img/cruise-olimpia-desktop.jpg"
-                  srcset="img/cruise-olimpia-desktop@2x.jpg 2x" width="260" height="386"
-                  alt="Льды антарктики" loading="lazy">
+                  srcset="img/cruise-olimpia-desktop@2x.jpg 2x" width="260" height="386" alt="Льды антарктики"
+                  loading="lazy">
               </picture>
               <h3>Круиз “Олимпия”</h3>
               <div class="cruises-card__popup">
@@ -276,9 +293,11 @@
             <li class="cruises__item cruises-card" tabindex="0">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/cruise-avrora-mobile.webp 1x, img/cruise-avrora-mobile@2x.webp 2x" width="270" height="386">
+                  srcset="img/cruise-avrora-mobile.webp 1x, img/cruise-avrora-mobile@2x.webp 2x" width="270"
+                  height="386">
                 <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/cruise-avrora-tablet.webp 1x, img/cruise-avrora-tablet@2x.webp 2x" width="309" height="386">
+                  srcset="img/cruise-avrora-tablet.webp 1x, img/cruise-avrora-tablet@2x.webp 2x" width="309"
+                  height="386">
                 <source type="image/webp"
                   srcset="img/cruise-avrora-desktop.webp 1x, img/cruise-avrora-desktop@2x.webp 2x" width="260"
                   height="386">
@@ -288,8 +307,8 @@
                 <source media="(max-width: 1023px)"
                   srcset="img/cruise-avrora-tablet.jpg 1x, img/cruise-avrora-tablet@2x.jpg 2x" width="309" height="386">
                 <img class="cruises-card__image" src="img/cruise-avrora-desktop.jpg"
-                  srcset="img/cruise-avrora-desktop@2x.jpg 2x" width="260" height="386"
-                  alt="Льды антарктики" loading="lazy">
+                  srcset="img/cruise-avrora-desktop@2x.jpg 2x" width="260" height="386" alt="Льды антарктики"
+                  loading="lazy">
               </picture>
               <h3>Круиз “Аврора”</h3>
               <div class="cruises-card__popup">
@@ -308,9 +327,11 @@
             <li class="cruises__item cruises-card" tabindex="0">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/cruise-leonor-mobile.webp 1x, img/cruise-leonor-mobile@2x.webp 2x" width="270" height="386">
+                  srcset="img/cruise-leonor-mobile.webp 1x, img/cruise-leonor-mobile@2x.webp 2x" width="270"
+                  height="386">
                 <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/cruise-leonor-tablet.webp 1x, img/cruise-leonor-tablet@2x.webp 2x" width="309" height="386">
+                  srcset="img/cruise-leonor-tablet.webp 1x, img/cruise-leonor-tablet@2x.webp 2x" width="309"
+                  height="386">
                 <source type="image/webp"
                   srcset="img/cruise-leonor-desktop.webp 1x, img/cruise-leonor-desktop@2x.webp 2x" width="260"
                   height="386">
@@ -320,8 +341,8 @@
                 <source media="(max-width: 1023px)"
                   srcset="img/cruise-leonor-tablet.jpg 1x, img/cruise-leonor-tablet@2x.jpg 2x" width="309" height="386">
                 <img class="cruises-card__image" src="img/cruise-leonor-desktop.jpg"
-                  srcset="img/cruise-leonor-desktop@2x.jpg 2x" width="260" height="386"
-                  alt="Льды антарктики" loading="lazy">
+                  srcset="img/cruise-leonor-desktop@2x.jpg 2x" width="260" height="386" alt="Льды антарктики"
+                  loading="lazy">
               </picture>
               <h3>Круиз “Леонор”</h3>
               <div class="cruises-card__popup">
@@ -340,9 +361,11 @@
             <li class="cruises__item cruises-card" tabindex="0">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/cruise-minion-mobile.webp 1x, img/cruise-minion-mobile@2x.webp 2x" width="270" height="386">
+                  srcset="img/cruise-minion-mobile.webp 1x, img/cruise-minion-mobile@2x.webp 2x" width="270"
+                  height="386">
                 <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/cruise-minion-tablet.webp 1x, img/cruise-minion-tablet@2x.webp 2x" width="309" height="386">
+                  srcset="img/cruise-minion-tablet.webp 1x, img/cruise-minion-tablet@2x.webp 2x" width="309"
+                  height="386">
                 <source type="image/webp"
                   srcset="img/cruise-minion-desktop.webp 1x, img/cruise-minion-desktop@2x.webp 2x" width="260"
                   height="386">
@@ -352,8 +375,8 @@
                 <source media="(max-width: 1023px)"
                   srcset="img/cruise-minion-tablet.jpg 1x, img/cruise-minion-tablet@2x.jpg 2x" width="309" height="386">
                 <img class="cruises-card__image" src="img/cruise-minion-desktop.jpg"
-                  srcset="img/cruise-minion-desktop@2x.jpg 2x" width="260" height="386"
-                  alt="Льды антарктики" loading="lazy">
+                  srcset="img/cruise-minion-desktop@2x.jpg 2x" width="260" height="386" alt="Льды антарктики"
+                  loading="lazy">
               </picture>
               <h3>Круиз “Минион&nbsp;- 1”</h3>
               <div class="cruises-card__popup">
@@ -372,7 +395,7 @@
           </ul>
         </div>
       </div>
-      <div class="container-max">
+      <div class="container-booking">
         <div class="booking">
           <div class="booking__text">
             <h2>Раннее бронирование</h2>
@@ -428,7 +451,7 @@
                   <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#mark-icon"></use>
                   </svg>
-                  <p>г.&nbsp;Санкт Петербург,<br>ул.&nbsp;Большая Конюшенная, 19/8</p>
+                  <p>г.&nbsp;Санкт Петербург, <br>ул.&nbsp;Большая Конюшенная, 19/8</p>
                 </li>
                 <li class="contacts-info__item">
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
