@@ -96,8 +96,11 @@
       position: relative;
       z-index: 25;
       margin-left: 36px;
-      stroke: $color-tangaroa;
-      color: $color-tangaroa;
+
+      @media (max-width: 767px) {
+        stroke: $color-tangaroa;
+        color: $color-tangaroa;
+      }
     }
 
     & svg {
@@ -194,7 +197,7 @@
 
   &__link {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 20px;
     color: $color-main-links;
 
