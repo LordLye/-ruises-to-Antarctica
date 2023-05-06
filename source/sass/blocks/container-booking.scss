@@ -1,0 +1,31 @@
+.container-booking {
+  padding: 0;
+  min-width: 320px;
+  background: url("../img/feedback-background-desktop.jpg") no-repeat, $light-sky-blue;
+  background-size: cover;
+
+  @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background: url("../img/feedback-background-desktop@2x.jpg") no-repeat, $light-sky-blue;
+    background-size: cover;
+  }
+
+  @include vp-1023 {
+    background: url("../img/feedback-background-tablet.jpg") no-repeat, $light-sky-blue;
+    background-size: cover;
+  }
+
+  @media (max-width: ($vp-1024 - 1)) and (min-resolution: $retina-dppx) {
+    background: url("../img/feedback-background-tablet@2x.jpg") no-repeat, $light-sky-blue;
+    background-size: cover;
+  }
+
+  @include vp-767 {
+    background: url("../img/feedback-background-mobile.jpg") no-repeat, $light-sky-blue;
+    background-size: cover;
+  }
+
+  @media (max-width: ($vp-768 - 1)) and (min-resolution: $retina-dppx) {
+    background: url("../img/feedback-background-mobile@2x.jpg") no-repeat, $light-sky-blue;
+    background-size: cover;
+  }
+}
