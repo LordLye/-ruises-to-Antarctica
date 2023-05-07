@@ -2,9 +2,12 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  /* padding: 0 7.54%; */
-  padding: 0 103px;
+  padding: 0 7.54%;
   min-width: 320px;
+
+  @media (min-width: ($vp-1920)) {
+    padding: 0 103px;
+  }
 
   @include vp-1023 {
     padding: 0 45px;

@@ -1,6 +1,5 @@
 .cruises-card {
   position: relative;
-  min-height: 386px;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -39,10 +38,11 @@
   visibility: hidden;
   flex-direction: column;
   width: 100%;
-  min-height: 386px;
   padding: 30px 25px 35px 25px;
   background: $color-tangaroa;
   height: 100%;
+  overflow: auto;
+
 
   @include vp-1023 {
     height: 100%;
@@ -110,4 +110,28 @@
       opacity: 0.6;
     }
   }
+}
+
+.cruises-card__popup-top {
+  width: 100%;
+
+  & > div {
+    position:relative;
+    width:100%;
+    padding-bottom:148.47%;
+
+    @include vp-1023 {
+      padding-bottom:124.92%;
+    }
+
+    @include vp-767 {
+      padding-bottom:142.97%;
+    }
+   }
+
+   & > div > div {
+    position:absolute;
+    width:100%;
+    height:100%;
+   }
 }
